@@ -54,10 +54,10 @@ export const Navbar: React.FC = () => {
         <nav>
           <ul className={`nav-links ${mobileOpen ? "open" : ""}`} id="nav-links">
             <li><a href="#about" className="nav-link" onClick={closeMobile}>About</a></li>
+            <li><a href="#education" className="nav-link" onClick={closeMobile}>Education</a></li>
             <li><a href="#skills" className="nav-link" onClick={closeMobile}>Skills</a></li>
             <li><a href="#publications" className="nav-link" onClick={closeMobile}>Publications</a></li>
             <li><a href="#projects" className="nav-link" onClick={closeMobile}>Projects</a></li>
-            <li><a href="#education" className="nav-link" onClick={closeMobile}>Education</a></li>
             <li><a href="#experience" className="nav-link" onClick={closeMobile}>Experience</a></li>
             <li><a href="#awards" className="nav-link" onClick={closeMobile}>Recognition</a></li>
             <li><a href="#contact" className="nav-link" onClick={closeMobile}>Contact</a></li>

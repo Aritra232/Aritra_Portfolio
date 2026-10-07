@@ -30,10 +30,10 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <Education />
         <Skills />
         <Publications onNotify={showToast} />
         <Projects />
-        <Education />
         <Experience />
         <Recognition />
         <Contact onNotify={showToast} />

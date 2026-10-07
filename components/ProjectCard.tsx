@@ -6,6 +6,8 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  const isGithub = project.linkUrl.includes("github.com");
+
   return (
     <div className="editorial-project-card">
       <div>
@@ -17,12 +19,27 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <p className="project-card-p">{project.description}</p>
       </div>
 
-      <div className="project-tags-strip">
-        {project.tags.map((tag, idx) => (
-          <span className="tech-mini-pill" key={idx}>
-            {tag}
-          </span>
-        ))}
+      <div>
+        <div className="project-tags-strip">
+          {project.tags.map((tag, idx) => (
+            <span className="tech-mini-pill" key={idx}>
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <div className="project-action-strip">
+          <a
+            href={project.linkUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link-btn"
+          >
+            <i className={isGithub ? "fa-brands fa-github" : "fa-solid fa-arrow-up-right-from-square"}></i>
+            <span>{project.linkLabel}</span>
+            <i className="fa-solid fa-arrow-right project-link-arrow"></i>
+          </a>
+        </div>
       </div>
     </div>
   );

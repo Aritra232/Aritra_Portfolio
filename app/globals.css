@@ -1240,13 +1240,51 @@ a {
   border: 1px solid var(--border-color);
 }
 
+.project-action-strip {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border-divider);
+}
+
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  background: var(--accent-cyan-soft);
+  border: 1px solid var(--accent-cyan-border);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.project-link-btn:hover {
+  background: var(--accent-cyan);
+  color: #0a0e17;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
+}
+
+.project-link-arrow {
+  font-size: 0.62rem;
+  transition: transform var(--transition-fast);
+}
+
+.project-link-btn:hover .project-link-arrow {
+  transform: translateX(3px);
+}
+
 /* ==========================================================================
    EDUCATION SECTION
    ========================================================================== */
 .education-editorial-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
 }
 
 .edu-editorial-card {
@@ -1789,6 +1827,10 @@ a {
   }
 
   .projects-editorial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-editorial-grid {
     grid-template-columns: 1fr;
   }
 }

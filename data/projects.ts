@@ -5,61 +5,82 @@ export interface Project {
   title: string;
   description: string;
   tags: string[];
+  linkUrl: string;
+  linkLabel: string;
+  isPrivate?: boolean;
 }
 
 export const projectsData: Project[] = [
+  {
+    id: "bengali-asr",
+    category: "SPEECH FOUNDATION MODELS & NLP",
+    badge: "EACL RESEARCH • XLSR-53",
+    title: "Transliteration-Based Zero-Shot Bengali ASR",
+    description:
+      "Investigated cross-lingual speech representation transfer by fine-tuning Wav2Vec2 and XLS-R (300M / XLSR-53) speech foundation models on FLEURS data. Evaluated zero-shot transliteration transfer across standard Bengali and regional Chittagonian dialects for EACL submission.",
+    tags: ["Wav2Vec2", "XLS-R 300M", "Zero-Shot ASR", "Bengali Dialects", "PyTorch"],
+    linkUrl: "https://github.com/Aritra232/Bengali-ASR",
+    linkLabel: "GitHub Repository",
+    isPrivate: true,
+  },
+  {
+    id: "skin-diseases",
+    category: "MEDICAL COMPUTER VISION & LLMS",
+    badge: "FASTAPI • PYTORCH • DOCKER",
+    title: "Skin Lesion Classifier & Clinical LLM Advisor",
+    description:
+      "End-to-end dermatological diagnostics pipeline employing fine-tuned EfficientNet deep backbones for multi-class skin lesion detection, integrated with an interactive LLM medical guidance agent served via asynchronous FastAPI and Dockerized for production deployment.",
+    tags: ["EfficientNet", "PyTorch", "FastAPI", "Docker", "Medical Vision"],
+    linkUrl: "https://github.com/Aritra232/Skin-Diseases",
+    linkLabel: "GitHub Repository",
+    isPrivate: false,
+  },
+  {
+    id: "google-ai-review",
+    category: "LLM BACKEND & ASYNC API",
+    badge: "FASTAPI • DEEPSEEK • MONGODB",
+    title: "FastAPI Review Intelligence & Personalization Service",
+    description:
+      "High-throughput asynchronous backend service combining MongoDB and DeepSeek AI (deepseek-chat) to analyze customer service interactions, synthesize customized review outreach messages, and optimize organic feedback engagement.",
+    tags: ["FastAPI", "DeepSeek AI", "MongoDB", "AsyncIO", "REST API"],
+    linkUrl: "https://github.com/Aritra232/Google_AI_Review",
+    linkLabel: "GitHub Repository",
+    isPrivate: false,
+  },
+  {
+    id: "ai-diamond",
+    category: "AI PIPELINE AUTOMATION & VIDEO",
+    badge: "GEMINI VEO • AWS S3 • FASTAPI",
+    title: "Diamond Motion Generative Video Pipeline",
+    description:
+      "Automated text-to-video and image-to-video generative pipeline orchestrating Gemini and Veo video foundation models. Manages asynchronous rendering tasks and persists rendered high-resolution media assets directly to AWS S3 storage buckets.",
+    tags: ["Gemini / Veo", "Generative Video AI", "AWS S3", "FastAPI", "Automation"],
+    linkUrl: "https://github.com/Aritra232/AI_Diamond",
+    linkLabel: "GitHub Repository",
+    isPrivate: false,
+  },
   {
     id: "bert-kan",
     category: "NLP & LARGE LANGUAGE MODELS",
     badge: "ELSEVIER Q1 • 2025",
     title: "BERT-KAN Bilingual Sentiment Analysis",
     description:
-      "Fine-tuned transformer architectures coupled with Kolmogorov-Arnold Networks (KAN) to capture complex non-linear sentiment and emotion nuances in low-resource bilingual Bangladeshi e-commerce reviews. Published in Natural Language Processing Journal.",
+      "Fine-tuned transformer architectures coupled with Kolmogorov-Arnold Networks (KAN) to capture complex non-linear sentiment and emotion nuances in low-resource bilingual Bangladeshi e-commerce reviews. Published in Elsevier Natural Language Processing Journal.",
     tags: ["BERT", "KAN", "LLM Fine-Tuning", "NLP", "PyTorch"],
-  },
-  {
-    id: "prompt-to-video",
-    category: "AI PIPELINE AUTOMATION",
-    badge: "N8N • GOOGLE DRIVE",
-    title: "Automated Prompt-to-Video Pipeline",
-    description:
-      "Created an automated workflow in n8n that accepts prompt inputs, triggers AI video generation in the background, uploads the rendered video directly into Google Drive, and sends a shareable link back to the user.",
-    tags: ["n8n Automation", "Generative Video AI", "Google Drive API", "Cloud Storage"],
+    linkUrl: "https://doi.org/10.1016/j.nlp.2025.100190",
+    linkLabel: "View Publication (DOI)",
+    isPrivate: false,
   },
   {
     id: "newsletter-curation",
     category: "CONTENT AUTOMATION & NLP",
-    badge: "N8N • BREVO",
+    badge: "N8N • BREVO • LLM PIPELINE",
     title: "Multi-Source Newsletter Curation & Dispatch",
     description:
-      "Developed an n8n workflow that aggregates European SME market news across multiple feeds, translates and summarizes content between German and English using LLMs, formats an editorial newsletter, and delivers it through Brevo.",
+      "Engineered an automated n8n workflow aggregating European SME market news across feeds, translating and summarizing content between German and English using LLMs, formatting an editorial newsletter, and delivering through Brevo.",
     tags: ["n8n Automation", "LLM Translation", "Brevo API", "Content Pipeline"],
-  },
-  {
-    id: "rag-ecommerce",
-    category: "RAG PIPELINES & LLMS",
-    badge: "FASTAPI • PINECONE",
-    title: "Conversational E-Commerce RAG Assistant",
-    description:
-      "A retrieval-augmented chatbot for e-commerce search, using fine-tuned LLaMA-2 with Pinecone for vector indexing. Built to handle bilingual queries (Bangla and English) with context-aware product recommendations.",
-    tags: ["LLaMA-2", "Pinecone Vector DB", "RAG", "LangChain", "FastAPI"],
-  },
-  {
-    id: "malware-ssl",
-    category: "CYBERSECURITY & SSL",
-    badge: "DEEP LEARNING",
-    title: "Self-Supervised Malware Classification",
-    description:
-      "Converted compiled binary executables into image representations to classify malware without extensive labeling. Evaluated self-supervised models including SimCLR, MoCo, and Masked Autoencoders on benchmark binary datasets.",
-    tags: ["SimCLR", "MoCo", "BYOL", "MAE", "PyTorch"],
-  },
-  {
-    id: "vision-gcn",
-    category: "APPLIED RESEARCH & GCN",
-    badge: "GRAPH VISION",
-    title: "Hybrid Vision & Graph Neural Backbone",
-    description:
-      "Combined self-supervised transformer and CNN backbones with Graph Convolutional Networks (GCN) to classify flower growth stages in variable lighting and field conditions. Published in Scientific Reports (Nature, Q1).",
-    tags: ["GCN", "Swin Transformer", "Scientific Reports Q1", "PyTorch"],
+    linkUrl: "https://github.com/Aritra232",
+    linkLabel: "GitHub Profile",
+    isPrivate: false,
   },
 ];
