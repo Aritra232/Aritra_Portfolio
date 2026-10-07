@@ -9,13 +9,13 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
-    id: "twilio-voice-ai",
-    category: "WORKFLOW AUTOMATION",
-    badge: "N8N • TWILIO",
-    title: "Automated AI Voice Calling Pipeline",
+    id: "bert-kan",
+    category: "NLP & LARGE LANGUAGE MODELS",
+    badge: "ELSEVIER Q1 • 2025",
+    title: "BERT-KAN Bilingual Sentiment Analysis",
     description:
-      "Built an automated outbound voice workflow in n8n using the Twilio Voice API and conversational AI. The system manages call scheduling, dynamic speech interactions, and records structured call transcripts into an internal database.",
-    tags: ["n8n Automation", "Twilio Voice API", "Conversational AI", "Telephony"],
+      "Fine-tuned transformer architectures coupled with Kolmogorov-Arnold Networks (KAN) to capture complex non-linear sentiment and emotion nuances in low-resource bilingual Bangladeshi e-commerce reviews. Published in Natural Language Processing Journal.",
+    tags: ["BERT", "KAN", "LLM Fine-Tuning", "NLP", "PyTorch"],
   },
   {
     id: "prompt-to-video",

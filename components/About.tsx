@@ -17,7 +17,7 @@ export const About: React.FC = () => {
               className="section-editorial-p"
               style={{ fontSize: "0.95rem", color: "var(--text-muted)" }}
             >
-              Currently, I engineer LLM systems and workflow automations at SM Technology, while researching self-supervised models and graph networks for my MSc degree.
+              Currently, I engineer production LLM and RAG systems at SM Technology, while researching self-supervised visual representations and graph neural networks for my MSc degree.
             </p>
             <div style={{ marginTop: "2rem" }}>
               <a href="#contact" className="btn btn-secondary">

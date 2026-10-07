@@ -19,13 +19,13 @@ export interface AcademicReference {
 export const experienceData: ExperienceItem[] = [
   {
     id: "sm-technology",
-    role: "AI Developer",
+    role: "AI Engineer",
     company: "SM Technology",
     location: "Dhaka, Bangladesh",
     timeframe: "April 2026 – Present",
     bullets: [
       "Build and deploy RAG pipelines and LLM backend services for client projects using FastAPI, LangChain, and vector databases.",
-      "Design multi-step workflow automations in n8n connecting third-party APIs, telephony, and internal databases.",
+      "Fine-tune open-source models and evaluate vector embeddings for domain-specific retrieval and semantic accuracy.",
       "Work on prompt engineering, chunking strategies, and latency optimization to reduce API costs and improve response quality.",
     ],
   },

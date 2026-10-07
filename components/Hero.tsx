@@ -13,8 +13,8 @@ export const Hero: React.FC = () => {
             </div>
 
             <h1 className="hero-editorial-h1">
-              Building production AI systems &amp; practical{" "}
-              <span className="hero-italic-highlight">automations.</span>
+              Building production AI systems &amp; deep learning{" "}
+              <span className="hero-italic-highlight">research.</span>
             </h1>
 
             <p className="hero-editorial-bio">{profileData.bio}</p>

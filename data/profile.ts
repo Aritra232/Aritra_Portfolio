@@ -25,11 +25,11 @@ export interface ProfileData {
 
 export const profileData: ProfileData = {
   name: "Aritra Das",
-  role: "AI Developer & CS Researcher",
+  role: "AI Engineer & CS Researcher",
   affiliation: "SM Technology • East West University",
   location: "Dhaka, Bangladesh",
-  headline: "Building production AI systems & practical automations.",
-  bio: "I'm an AI developer at SM Technology and a graduate researcher at East West University, Dhaka. Most of my work involves building production LLM services, automating workflows with n8n, and researching self-supervised computer vision for my MSc in CSE.",
+  headline: "Building production AI systems & machine learning research.",
+  bio: "I'm an AI Engineer at SM Technology and a graduate researcher at East West University, Dhaka. Most of my work involves building production LLM & RAG services, training self-supervised computer vision models, and exploring graph neural networks for my MSc in CSE.",
   email: "aritrad768@gmail.com",
   github: "https://github.com/Aritra232",
   linkedin: "https://linkedin.com/in/aritra-das-9a1051225",
@@ -56,9 +56,9 @@ export const profileData: ProfileData = {
     },
     {
       number: "03",
-      title: "Production LLMs & n8n Automation",
+      title: "Production LLMs & RAG Systems",
       description:
-        "Building practical RAG pipelines with FastAPI and Pinecone, alongside multi-service workflow automations in n8n connecting Twilio, Brevo, and cloud APIs.",
+        "Building scalable retrieval-augmented generation pipelines with FastAPI and Pinecone, optimizing embedding search, chunking strategies, and localized bilingual query understanding.",
     },
     {
       number: "04",

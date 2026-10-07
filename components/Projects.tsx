@@ -9,7 +9,7 @@ export const Projects: React.FC = () => {
         <div className="section-label">// SELECTED WORK</div>
         <h2 className="section-editorial-h2">Projects &amp; Systems.</h2>
         <p className="section-editorial-p">
-          A selection of AI applications, automation workflows built with n8n, and applied machine learning research.
+          A selection of production AI systems, deep learning research implementations, and practical pipelines.
         </p>
 
         <div className="projects-editorial-grid">
