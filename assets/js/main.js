@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function initTheme() {
   const themeToggle = document.getElementById('theme-toggle');
   const themeIcon = document.getElementById('theme-icon');
-  const savedTheme = localStorage.getItem('theme') || 'dark';
+  const savedTheme = localStorage.getItem('theme') || 'light';
 
   document.documentElement.setAttribute('data-theme', savedTheme);
   updateThemeIcon(savedTheme);
