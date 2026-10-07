@@ -3,180 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aritra Das | AI Developer & Computer Science Researcher</title>
+  <title>Aritra Das — AI Developer & Computer Science Researcher</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Portfolio of Aritra Das - AI Developer & Computer Science Researcher with 11 peer-reviewed publications, 6 Q1 journals, and Best Paper Award at AII 2025. Specializing in LLMs, RAG, Computer Vision, and Self-Supervised Learning.">
-  <meta name="keywords" content="Aritra Das, AI Developer, Machine Learning Researcher, NLP, Computer Vision, RAG, Large Language Models, Deep Learning, East West University, Dhaka, Bangladesh">
+  <meta name="description" content="Aritra Das — AI Developer & Computer Science Researcher with 11 peer-reviewed publications, 6 Q1 journals, and Best Paper Award at AII 2025. Focused on Self-Supervised Learning, Graph Neural Networks, and Production LLM/RAG systems.">
+  <meta name="keywords" content="Aritra Das, AI Developer, Machine Learning Researcher, Self-Supervised Learning, Computer Vision, GCN, LLM, RAG, East West University, Dhaka">
   <meta name="author" content="Aritra Das">
 
   <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Aritra Das | AI Developer & CS Researcher">
-  <meta property="og:description" content="11 Publications (6 Q1 Journals) • Best Paper Award Winner (AII 2025) • MS in CSE • Specializing in LLMs, RAG & Deep Learning.">
+  <meta property="og:title" content="Aritra Das — AI Developer & CS Researcher">
+  <meta property="og:description" content="11 Publications (6 Q1 Journals) • Best Paper Award (AII 2025) • MS in CSE • Specializing in SSL, Vision-GCN & LLMs.">
   <meta property="og:image" content="assets/images/aritra_pic.jpeg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
 
-  <!-- Google Fonts: Outfit & Plus Jakarta Sans & JetBrains Mono -->
+  <!-- Google Fonts: Fraunces (Editorial Serif), Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Core Stylesheet -->
+  <!-- Core Editorial Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- Interactive Neural Particles Canvas -->
-  <canvas id="particles-canvas"></canvas>
-
-  <!-- Ambient Backdrop Lights -->
-  <div class="ambient-glow"></div>
-  <div class="ambient-glow-2"></div>
-
   <!-- ==========================================================================
-       NAVIGATION BAR
+       NAVIGATION BAR (EDITORIAL MINIMALIST)
        ========================================================================== -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#hero" class="nav-logo" aria-label="Aritra Das Home">
-        <div class="logo-symbol">AD</div>
-        <span>Aritra<span class="gradient-text">.ai</span></span>
+      
+      <!-- Brand -->
+      <a href="#hero" class="nav-brand" aria-label="Aritra Das">
+        <img src="assets/images/aritra_pic.jpeg" alt="Aritra Das" class="nav-avatar-mini">
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Aritra Das</span>
+          <span class="nav-brand-title">AI &amp; CS RESEARCH</span>
+        </div>
       </a>
 
+      <!-- Primary Links -->
       <nav>
         <ul class="nav-links" id="nav-links">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#education" class="nav-link">Education</a></li>
           <li><a href="#publications" class="nav-link">Publications</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#awards" class="nav-link">Honors</a></li>
+          <li><a href="#projects" class="nav-link">Work</a></li>
+          <li><a href="#experience" class="nav-link">Trajectory</a></li>
+          <li><a href="#awards" class="nav-link">Distinction</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
+      <!-- Nav Actions -->
       <div class="nav-actions">
+        <!-- Live Status Pill -->
+        <div class="availability-pill" title="Currently open for AI Research &amp; Engineering collaborations">
+          <span class="live-dot"></span>
+          <span>AVAILABLE</span>
+        </div>
+
         <!-- Theme Toggle -->
-        <button class="theme-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
-          <i class="fa-solid fa-sun" id="theme-icon"></i>
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
         </button>
 
-        <!-- Download CV Action -->
-        <a href="assets/docs/Aritra_Das_CV.pdf" download="Aritra_Das_CV.pdf" class="btn btn-primary btn-sm" id="nav-cv-btn">
-          <i class="fa-solid fa-file-arrow-down"></i>
-          <span>Download CV</span>
+        <!-- CV Button -->
+        <a href="assets/docs/Aritra_Das_CV.pdf" download="Aritra_Das_CV.pdf" class="btn btn-secondary" style="padding: 0.45rem 0.95rem; font-size: 0.8rem;" id="nav-cv-btn">
+          <i class="fa-solid fa-arrow-down-to-bracket"></i>
+          <span>Resume</span>
         </a>
 
         <!-- Mobile Menu Toggle Button -->
-        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Mobile Menu">
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Open Navigation Menu">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
+
     </div>
   </header>
 
   <main>
     <!-- ==========================================================================
-         HERO SECTION
+         HERO SECTION (FAHIM-STYLE EDITORIAL HERO)
          ========================================================================== -->
-    <section class="hero-section" id="hero">
+    <section class="hero-editorial" id="hero">
       <div class="container">
-        <div class="hero-grid">
+        <div class="hero-editorial-grid">
           
-          <!-- Hero Intro Column -->
-          <div class="hero-content">
-            <div class="hero-status-pill">
-              <span class="pulse-dot"></span>
-              <span>Available for AI Research & Engineering Roles</span>
+          <!-- Left Column: Editorial Headline & Bio -->
+          <div class="hero-editorial-content">
+            <div class="hero-mono-label">
+              <span>//</span> AI DEVELOPER &amp; COMPUTER SCIENCE RESEARCHER
             </div>
 
-            <h1 class="hero-title">
-              Hello, I'm <br>
-              <span class="gradient-text">Aritra Das</span>
+            <h1 class="hero-editorial-h1">
+              Advancing intelligent representations <span class="hero-italic-highlight">with intention.</span>
             </h1>
 
-            <div class="hero-role-wrapper">
-              <span>I specialize in</span>
-              <span class="typed-role" id="typed-role">AI Developer</span>
-            </div>
-
-            <p class="hero-description">
-              Computer Science researcher and AI developer with an <strong>MS in CSE</strong> and 
-              <strong>11 peer-reviewed publications</strong> (including <strong>six Q1 journal papers</strong>). 
-              Winner of the <strong>Best Paper Award at AII 2025 (Washington D.C.)</strong>. 
-              Bridging the boundary between theoretical machine learning research and high-performance production AI systems.
+            <p class="hero-editorial-bio">
+              I am an AI developer and computer science researcher working at the confluence of self-supervised vision representations, graph-coupled deep learning backbones, and production-grade Retrieval-Augmented Generation (RAG) pipelines. Focused on transforming foundational discoveries into resilient, scalable systems.
             </p>
 
-            <div class="hero-cta-group">
+            <!-- Vertical Stats Divider (Clean Fahim-Style) -->
+            <div class="editorial-stats-row">
+              <div class="editorial-stat-item">
+                <div class="stat-big-num">11+</div>
+                <div class="stat-sub-label">Publications</div>
+              </div>
+
+              <div class="editorial-stat-item">
+                <div class="stat-big-num">6</div>
+                <div class="stat-sub-label">Q1 Journals</div>
+              </div>
+
+              <div class="editorial-stat-item">
+                <div class="stat-big-num">1st</div>
+                <div class="stat-sub-label">Best Paper Award</div>
+              </div>
+
+              <div class="editorial-stat-item">
+                <div class="stat-big-num">MS</div>
+                <div class="stat-sub-label">East West Univ.</div>
+              </div>
+            </div>
+
+            <!-- Call to Actions -->
+            <div class="hero-actions-group">
               <a href="assets/docs/Aritra_Das_CV.pdf" download="Aritra_Das_CV.pdf" class="btn btn-primary" id="hero-download-cv">
-                <i class="fa-solid fa-download"></i>
-                <span>Download ATS CV</span>
+                <i class="fa-solid fa-arrow-down-to-bracket"></i>
+                <span>Download Resume</span>
               </a>
 
               <a href="#publications" class="btn btn-secondary">
-                <i class="fa-solid fa-book-bookmark"></i>
-                <span>Explore Research</span>
+                <span>Read Publications</span>
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
 
-              <a href="#contact" class="btn btn-secondary">
-                <i class="fa-regular fa-paper-plane"></i>
-                <span>Let's Talk</span>
-              </a>
+              <!-- Mini Social Strip -->
+              <div class="hero-social-mini-strip">
+                <a href="https://scholar.google.com/citations?user=WkuhmCUAAAAJ" target="_blank" rel="noopener noreferrer" class="social-pill-btn" title="Google Scholar">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </a>
+                <a href="https://github.com/Aritra232" target="_blank" rel="noopener noreferrer" class="social-pill-btn" title="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/aritra-das-9a1051225" target="_blank" rel="noopener noreferrer" class="social-pill-btn" title="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:aritrad768@gmail.com" class="social-pill-btn" title="Email Directly">
+                  <i class="fa-regular fa-envelope"></i>
+                </a>
+              </div>
             </div>
 
-            <!-- Social and Scientific Links -->
-            <div class="hero-socials">
-              <span class="hero-social-label">Find Me On:</span>
-              <a href="https://scholar.google.com/citations?user=WkuhmCUAAAAJ" target="_blank" rel="noopener noreferrer" class="social-icon-btn scholar" title="Google Scholar Profile" id="link-scholar">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </a>
-              <a href="https://github.com/Aritra232" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Repository" id="link-github">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://linkedin.com/in/aritra-das-9a1051225" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile" id="link-linkedin">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a href="mailto:aritrad768@gmail.com" class="social-icon-btn" title="Send Direct Email" id="link-email">
-                <i class="fa-regular fa-envelope"></i>
-              </a>
-            </div>
           </div>
 
-          <!-- Hero Image & Hologram Frame -->
-          <div class="hero-visual-card">
-            <div class="hero-avatar-frame">
-              <div class="hero-avatar-inner">
-                <img src="assets/images/aritra_pic.jpeg" alt="Aritra Das - AI Developer & Researcher" class="hero-avatar-img">
+          <!-- Right Column: Editorial Portrait Card (Strictly No Badge Overlays) -->
+          <div class="hero-portrait-container">
+            <div class="editorial-photo-card">
+              
+              <div class="photo-card-top-bar">
+                <div class="photo-card-badge">
+                  <span class="photo-card-dot"></span>
+                  <span>DHAKA, BANGLADESH</span>
+                </div>
+                <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">2026</span>
               </div>
 
-              <!-- Floating Top Badge: Best Paper Award -->
-              <div class="floating-badge badge-top">
-                <div class="badge-icon gold">
-                  <i class="fa-solid fa-trophy"></i>
-                </div>
-                <div>
-                  <div class="badge-text-title">Best Paper Award</div>
-                  <div class="badge-text-sub">AII 2025 • Washington D.C.</div>
-                </div>
+              <div class="photo-card-img-wrapper">
+                <img src="assets/images/aritra_pic.jpeg" alt="Aritra Das — AI Developer and Researcher" class="photo-card-img">
               </div>
 
-              <!-- Floating Bottom Badge: 6x Q1 Papers -->
-              <div class="floating-badge badge-bottom">
-                <div class="badge-icon blue">
-                  <i class="fa-solid fa-award"></i>
-                </div>
-                <div>
-                  <div class="badge-text-title">6x Q1 Journal Papers</div>
-                  <div class="badge-text-sub">Data in Brief & Scientific Reports</div>
-                </div>
+              <div class="photo-card-footer">
+                <div class="photo-card-name">Aritra Das</div>
+                <div class="photo-card-meta">AI Developer @ SM Technology • M.S. in CSE</div>
               </div>
+
             </div>
           </div>
 
@@ -185,1205 +193,932 @@
     </section>
 
     <!-- ==========================================================================
-         METRICS STRIP (ANIMATED STATS)
-         ========================================================================== -->
-    <section class="metrics-section">
-      <div class="container">
-        <div class="metrics-grid">
-          
-          <div class="metric-card">
-            <div class="metric-number"><span class="counter-val" data-target="11">0</span>+</div>
-            <div class="metric-label">Peer-Reviewed Publications</div>
-            <div class="metric-sub">Indexed in Scopus & Web of Science</div>
-          </div>
-
-          <div class="metric-card">
-            <div class="metric-number"><span class="counter-val" data-target="6">0</span></div>
-            <div class="metric-label">Q1 Journal Articles</div>
-            <div class="metric-sub">Elsevier & Nature Scientific Reports</div>
-          </div>
-
-          <div class="metric-card award-metric">
-            <div class="metric-number"><span class="counter-val" data-target="1">0</span>st</div>
-            <div class="metric-label">Best Paper Award</div>
-            <div class="metric-sub">AII 2025, Washington D.C., USA</div>
-          </div>
-
-          <div class="metric-card">
-            <div class="metric-number"><span class="counter-val" data-target="5">0</span></div>
-            <div class="metric-label">Conference Papers</div>
-            <div class="metric-sub">IEEE & Springer Proceedings</div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         ABOUT ME SECTION
+         PRACTICE SECTION ("FOUR THREADS, ONE CRAFT" - FAHIM INSPIRED)
          ========================================================================== -->
     <section class="section" id="about">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag"><i class="fa-solid fa-user-astronaut"></i> Background</div>
-          <h2 class="section-title">Bridging Deep Research with <span class="gradient-text">Practical AI Engineering</span></h2>
-          <p class="section-subtitle">
-            Passionate about pushing the frontiers of Self-Supervised Learning, Multimodal Foundation Models, and Production-Grade RAG Systems.
-          </p>
-        </div>
-
-        <div class="about-grid">
-          <!-- Bio Narrative -->
-          <div class="about-text">
-            <p>
-              I am a Computer Science researcher and AI developer based in Dhaka, Bangladesh, working at the convergence of deep learning, self-supervised representation learning, and production-scale intelligent systems.
+        <div class="practice-grid">
+          
+          <!-- Left: Narrative -->
+          <div>
+            <div class="section-label">// PRACTICE</div>
+            <h2 class="section-editorial-h2">Four threads,<br>one craft.</h2>
+            <p class="section-editorial-p" style="margin-bottom: 1.5rem;">
+              Sound engineering demands both rigorous empirical inquiry and disciplined systems architecture. My research and industry work converge across four complementary specializations.
             </p>
-            <p>
-              My academic trajectory encompasses 11 peer-reviewed research papers, including six Q1 journal articles across Elsevier and Nature Scientific Reports, alongside the prestigious Best Paper Award at AII 2025 in Washington, D.C. My research explores label-efficient visual representation learning, hybrid vision transformer backbones with Graph Convolutional Networks (GCN), fine-grained bilingual NLP, and large-scale benchmark dataset creation.
+            <p class="section-editorial-p" style="font-size: 0.95rem; color: var(--text-muted);">
+              Currently translating research in label-efficient vision models and multi-agent LLM pipelines into production environments at SM Technology.
             </p>
-            <p>
-              Currently serving as an AI Developer at SM Technology, I architect and deploy production-grade Large Language Model (LLM) applications and Retrieval-Augmented Generation (RAG) pipelines, translating cutting-edge scientific discoveries into robust, scalable software that drives real-world impact.
-            </p>
-
-            <div class="about-highlights-grid">
-              <div class="highlight-box">
-                <i class="fa-solid fa-brain highlight-icon"></i>
-                <div class="highlight-title">SSL & Deep Learning</div>
-                <div class="highlight-desc">Contrastive & masked modeling (SimCLR, MoCo, BYOL, MAE) for label-efficient vision.</div>
-              </div>
-
-              <div class="highlight-box">
-                <i class="fa-solid fa-network-wired highlight-icon"></i>
-                <div class="highlight-title">GNN & Multimodal AI</div>
-                <div class="highlight-desc">Hybrid architectures pairing Vision Transformers with Graph Convolutional Networks.</div>
-              </div>
-
-              <div class="highlight-box">
-                <i class="fa-solid fa-comments highlight-icon"></i>
-                <div class="highlight-title">LLMs & RAG Architectures</div>
-                <div class="highlight-desc">Fine-tuning LLaMA, vector databases (Pinecone), and LangChain production pipelines.</div>
-              </div>
-
-              <div class="highlight-box">
-                <i class="fa-solid fa-database highlight-icon"></i>
-                <div class="highlight-title">Benchmark Datasets</div>
-                <div class="highlight-desc">Pioneered datasets for floriculture, Bangla NLP, mango varieties, and urban traffic.</div>
-              </div>
+            <div style="margin-top: 2rem;">
+              <a href="#contact" class="btn btn-secondary">
+                <span>Inquire About Collaboration</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
           </div>
 
-          <!-- Academic & Research Pillars Card -->
-          <div class="pillars-card">
-            <h3 class="pillars-title">
-              <i class="fa-solid fa-compass-drafting gradient-text"></i>
-              Core Research Pillars
-            </h3>
-
-            <div class="pillar-item">
-              <div class="pillar-num">01</div>
-              <div class="pillar-content">
-                <h4>Self-Supervised Representation Learning</h4>
-                <p>Developing label-efficient visual representations using contrastive frameworks to eliminate dependence on costly manual annotations in specialized domains.</p>
+          <!-- Right: Four Threads List -->
+          <div class="threads-list">
+            
+            <div class="thread-row">
+              <span class="thread-num">01</span>
+              <div class="thread-title">Self-Supervised Representation Learning</div>
+              <div class="thread-desc">
+                Eliminating reliance on expensive manual labels using contrastive paradigms (SimCLR, MoCo, BYOL) and masked autoencoders (MAE) for high-dimensional feature transfer.
               </div>
             </div>
 
-            <div class="pillar-item">
-              <div class="pillar-num">02</div>
-              <div class="pillar-content">
-                <h4>Bilingual & Low-Resource NLP</h4>
-                <p>Specialized in code-mixed Bangla-English sentiment, fine-grained emotion detection, and domain-adapted Large Language Models for e-commerce.</p>
+            <div class="thread-row">
+              <span class="thread-num">02</span>
+              <div class="thread-title">Vision Transformers &amp; Graph Networks</div>
+              <div class="thread-desc">
+                Coupling CNN/Swin transformer spatial features with Graph Convolutional Networks (GCN) to capture topological, relational dependencies across biological and botanical domains.
               </div>
             </div>
 
-            <div class="pillar-item">
-              <div class="pillar-num">03</div>
-              <div class="pillar-content">
-                <h4>Computer Vision & Edge Surveillance</h4>
-                <p>End-to-end YOLO pipelines with Hikvision integration, automated Telegram alerts, and real-time safety monitoring under adverse conditions.</p>
+            <div class="thread-row">
+              <span class="thread-num">03</span>
+              <div class="thread-title">Production LLMs &amp; RAG Pipelines</div>
+              <div class="thread-desc">
+                Architecting sub-second semantic retrieval, vector index optimization with Pinecone, fine-tuned open-source models (LLaMA-2), and fault-tolerant agentic workflows.
               </div>
             </div>
 
-            <div class="pillar-item">
-              <div class="pillar-num">04</div>
-              <div class="pillar-content">
-                <h4>Scalable AI Engineering</h4>
-                <p>Modern data pipelines, lakehouse ETL architectures, and microservices powered by FastAPI, PyTorch, and Docker for high-throughput deployment.</p>
+            <div class="thread-row">
+              <span class="thread-num">04</span>
+              <div class="thread-title">Curated Benchmark Dataset Engineering</div>
+              <div class="thread-desc">
+                Building, rigorously validating, and open-sourcing foundational benchmark datasets (BDFlower, TFP-BD, BDMANGO) published in premier Elsevier Q1 journals.
               </div>
             </div>
+
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         EDUCATIONAL BACKGROUND SECTION
+         EDUCATIONAL BACKGROUND SECTION (MINIMALIST & PRESTIGIOUS - CGPA HERE ONLY)
          ========================================================================== -->
     <section class="section" id="education">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Pedigree</div>
-          <h2 class="section-title">Educational <span class="gradient-text">Background</span></h2>
-          <p class="section-subtitle">
-            Strong foundational computer science training combined with top-tier graduate research and distinguished grades.
-          </p>
-        </div>
+        
+        <div class="section-label">// ACADEMIC FOUNDATION</div>
+        <h2 class="section-editorial-h2">Educational Background.</h2>
+        <p class="section-editorial-p">
+          Rigorous academic training in Computer Science, advanced machine learning, and mathematical foundations.
+        </p>
 
-        <div class="education-grid">
+        <div class="education-editorial-grid">
           
-          <!-- Degree 1: MS in CSE -->
-          <div class="education-card highlight-edu">
+          <!-- Degree 1: M.S. in CSE -->
+          <div class="edu-editorial-card">
             <div>
-              <div class="edu-top-row">
-                <div class="edu-icon-wrap ms-icon">
-                  <i class="fa-solid fa-award"></i>
-                </div>
-                <div class="edu-badge-grade">
-                  <span class="cgpa-pill">CGPA: 3.91 / 4.00</span>
-                </div>
+              <div class="edu-card-top">
+                <span class="edu-year-label">January 2025 – Present</span>
+                <span class="edu-grade-tag gold">CGPA: 3.91 / 4.00</span>
               </div>
-              <h3 class="edu-degree-title">MS in Computer Science and Engineering</h3>
-              <div class="edu-institution">
-                <i class="fa-solid fa-university"></i> East West University, Dhaka, Bangladesh
-              </div>
-              <div class="edu-duration">
-                <i class="fa-regular fa-calendar"></i> January 2025 – December 2025
-              </div>
-              <p class="edu-desc">
-                Advanced graduate research in deep representation learning, self-supervised vision models, and Graph Convolutional Networks (GCN). Successfully published multiple landmark Q1 papers during this tenure.
+              <h3 class="edu-card-degree">Master of Science in Computer Science &amp; Engineering</h3>
+              <div class="edu-card-inst">East West University, Dhaka, Bangladesh</div>
+              <p class="edu-card-desc">
+                Advanced graduate research in deep representation learning, self-supervised vision models, and Graph Convolutional Networks (GCN). Published landmark Q1 journal papers during this tenure.
               </p>
             </div>
-            <div class="edu-tags">
-              <span class="edu-tag">Self-Supervised Learning</span>
-              <span class="edu-tag">Vision Transformers</span>
-              <span class="edu-tag">Graph Neural Nets</span>
-              <span class="edu-tag">Q1 Publications</span>
+            <div class="edu-card-pills">
+              <span class="edu-pill">Self-Supervised Learning</span>
+              <span class="edu-pill">Graph Neural Networks</span>
+              <span class="edu-pill">Vision Transformers</span>
+              <span class="edu-pill">Q1 Publications</span>
             </div>
           </div>
 
-          <!-- Degree 2: B.Sc in CSE -->
-          <div class="education-card">
+          <!-- Degree 2: B.Sc. in CSE -->
+          <div class="edu-editorial-card">
             <div>
-              <div class="edu-top-row">
-                <div class="edu-icon-wrap bsc-icon">
-                  <i class="fa-solid fa-graduation-cap"></i>
-                </div>
-                <div class="edu-badge-grade">
-                  <span class="cgpa-pill">CGPA: 3.76 / 4.00</span>
-                </div>
+              <div class="edu-card-top">
+                <span class="edu-year-label">January 2020 – December 2024</span>
+                <span class="edu-grade-tag">CGPA: 3.76 / 4.00</span>
               </div>
-              <h3 class="edu-degree-title">B.Sc. in Computer Science and Engineering</h3>
-              <div class="edu-institution">
-                <i class="fa-solid fa-university"></i> East West University, Dhaka, Bangladesh
-              </div>
-              <div class="edu-duration">
-                <i class="fa-regular fa-calendar"></i> January 2020 – December 2024
-              </div>
-              <p class="edu-desc">
-                Rigorous computer science curriculum including Data Structures, Algorithms, Computer Vision, Operating Systems, Machine Learning, and Distributed Database Systems. Developed AI-powered recommendation chatbot (LLaMA-2 + Pinecone) as Capstone project.
+              <h3 class="edu-card-degree">Bachelor of Science in Computer Science &amp; Engineering</h3>
+              <div class="edu-card-inst">East West University, Dhaka, Bangladesh</div>
+              <p class="edu-card-desc">
+                Comprehensive curriculum covering Data Structures, Algorithms, Computer Vision, Operating Systems, Machine Learning, and Distributed Database Systems. Developed an AI-powered conversational chatbot (LLaMA-2 + Pinecone) as Capstone project.
               </p>
             </div>
-            <div class="edu-tags">
-              <span class="edu-tag">Data Structures & Algo</span>
-              <span class="edu-tag">Computer Vision</span>
-              <span class="edu-tag">NLP & LLMs</span>
-              <span class="edu-tag">Capstone Project</span>
+            <div class="edu-card-pills">
+              <span class="edu-pill">Data Structures &amp; Algo</span>
+              <span class="edu-pill">Computer Vision</span>
+              <span class="edu-pill">NLP &amp; LLMs</span>
+              <span class="edu-pill">Capstone Project</span>
             </div>
           </div>
 
           <!-- Degree 3: HSC -->
-          <div class="education-card">
+          <div class="edu-editorial-card">
             <div>
-              <div class="edu-top-row">
-                <div class="edu-icon-wrap hsc-icon">
-                  <i class="fa-solid fa-building-columns"></i>
-                </div>
-                <div class="edu-badge-grade">
-                  <span class="cgpa-pill">GPA: 4.58 / 5.00</span>
-                </div>
+              <div class="edu-card-top">
+                <span class="edu-year-label">June 2017 – July 2019</span>
+                <span class="edu-grade-tag">GPA: 4.58 / 5.00</span>
               </div>
-              <h3 class="edu-degree-title">Higher Secondary Certificate (HSC)</h3>
-              <div class="edu-institution">
-                <i class="fa-solid fa-school"></i> Dhaka College, Dhaka, Bangladesh
-              </div>
-              <div class="edu-duration">
-                <i class="fa-regular fa-calendar"></i> June 2017 – July 2019
-              </div>
-              <p class="edu-desc">
+              <h3 class="edu-card-degree">Higher Secondary Certificate (HSC)</h3>
+              <div class="edu-card-inst">Dhaka College, Dhaka, Bangladesh</div>
+              <p class="edu-card-desc">
                 Science division curriculum emphasizing Higher Mathematics, Physics, Chemistry, and Information Technology from one of the most historic and prestigious colleges in Bangladesh.
               </p>
             </div>
-            <div class="edu-tags">
-              <span class="edu-tag">Science Group</span>
-              <span class="edu-tag">Higher Mathematics</span>
-              <span class="edu-tag">Physics</span>
+            <div class="edu-card-pills">
+              <span class="edu-pill">Science Group</span>
+              <span class="edu-pill">Higher Mathematics</span>
+              <span class="edu-pill">Physics</span>
             </div>
           </div>
 
           <!-- Degree 4: SSC -->
-          <div class="education-card">
+          <div class="edu-editorial-card">
             <div>
-              <div class="edu-top-row">
-                <div class="edu-icon-wrap ssc-icon">
-                  <i class="fa-solid fa-medal"></i>
-                </div>
-                <div class="edu-badge-grade">
-                  <span class="cgpa-pill perfect-grade">GPA: 5.00 / 5.00</span>
-                </div>
+              <div class="edu-card-top">
+                <span class="edu-year-label">January 2007 – May 2017</span>
+                <span class="edu-grade-tag gold">GPA: 5.00 / 5.00 (Golden)</span>
               </div>
-              <h3 class="edu-degree-title">Secondary School Certificate (SSC)</h3>
-              <div class="edu-institution">
-                <i class="fa-solid fa-school"></i> Ideal School and College, Motijheel, Dhaka
-              </div>
-              <div class="edu-duration">
-                <i class="fa-regular fa-calendar"></i> January 2007 – May 2017
-              </div>
-              <p class="edu-desc">
+              <h3 class="edu-card-degree">Secondary School Certificate (SSC)</h3>
+              <div class="edu-card-inst">Ideal School and College, Motijheel, Dhaka</div>
+              <p class="edu-card-desc">
                 Achieved perfect grade point average (GPA 5.00 / 5.00) in Science group with top distinction across all subjects from Ideal School and College, Motijheel.
               </p>
             </div>
-            <div class="edu-tags">
-              <span class="edu-tag">Science Group</span>
-              <span class="edu-tag">Perfect GPA 5.00</span>
-              <span class="edu-tag">Top Distinction</span>
+            <div class="edu-card-pills">
+              <span class="edu-pill">Science Group</span>
+              <span class="edu-pill">Top Distinction</span>
+              <span class="edu-pill">Ideal School Motijheel</span>
             </div>
           </div>
 
         </div>
+
       </div>
     </section>
 
     <!-- ==========================================================================
-         PUBLICATIONS & RESEARCH (FEATURED SHOWPIECE)
+         SCHOLARLY WORK / PUBLICATIONS SECTION
          ========================================================================== -->
     <section class="section" id="publications">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag"><i class="fa-solid fa-newspaper"></i> Scholarly Work</div>
-          <h2 class="section-title">Peer-Reviewed <span class="gradient-text">Publications</span></h2>
-          <p class="section-subtitle">
-            11 peer-reviewed papers spanning Q1 scientific journals and international IEEE/Springer conferences.
-          </p>
-        </div>
+        
+        <div class="section-label">// SCHOLARLY WORK</div>
+        <h2 class="section-editorial-h2">Peer-Reviewed Publications.</h2>
+        <p class="section-editorial-p">
+          11 peer-reviewed research papers across leading international venues, including six Q1 scientific journals and the Best Paper Award at AII 2025.
+        </p>
 
         <!-- Filter Tabs -->
-        <div class="pub-tabs">
-          <button class="pub-tab-btn active" data-filter="all">All Publications (11)</button>
-          <button class="pub-tab-btn" data-filter="q1">Q1 Journals (6)</button>
-          <button class="pub-tab-btn" data-filter="conference">Conference Papers (5)</button>
-          <button class="pub-tab-btn" data-filter="award">Best Paper Award (1)</button>
+        <div class="pub-filter-strip">
+          <button class="pub-pill-tab active" data-filter="all">All Works (11)</button>
+          <button class="pub-pill-tab" data-filter="q1">Q1 Journals (6)</button>
+          <button class="pub-pill-tab" data-filter="conference">Conference Papers (5)</button>
+          <button class="pub-pill-tab" data-filter="award">Best Paper Award (1)</button>
         </div>
 
-        <div class="pub-list">
+        <!-- Publications List -->
+        <div class="editorial-pub-list">
           
           <!-- Publication 1: BDFlower (Q1) -->
-          <article class="pub-card" data-type="q1">
-            <div class="pub-header">
-              <div class="pub-badges">
-                <span class="badge-q1"><i class="fa-solid fa-circle-check"></i> Q1 Journal</span>
-                <span class="pub-year">2026</span>
+          <article class="editorial-pub-item" data-type="q1">
+            <div class="pub-item-header">
+              <div class="pub-meta-badges">
+                <span class="tag-q1">Q1 Journal</span>
+                <span class="tag-conf">2026</span>
               </div>
-              <span class="pub-venue">Data in Brief (Elsevier), Vol. 66, p. 112745</span>
+              <span class="pub-item-venue">Data in Brief (Elsevier), Vol. 66, p. 112745</span>
             </div>
-            <h3 class="pub-title">
+            <h3 class="pub-item-title">
               <a href="https://doi.org/10.1016/j.dib.2026.112745" target="_blank" rel="noopener noreferrer">
                 BDFlower: Growth stage flower image dataset for precision agriculture and floriculture
               </a>
             </h3>
-            <p class="pub-authors">
-              <span class="author-me">A. Das</span>, M. R. A. Rashid, M. R. Hasan, K. Shams, and R. U. Islam
+            <p class="pub-item-authors">
+              <span class="me">A. Das</span>, M. R. A. Rashid, M. R. Hasan, K. Shams, and R. U. Islam
             </p>
-            <div class="pub-actions">
-              <a href="https://doi.org/10.1016/j.dib.2026.112745" target="_blank" rel="noopener noreferrer" class="pub-btn doi-link">
-                <i class="fa-solid fa-link"></i> DOI: 10.1016/j.dib.2026.112745
+            <div class="pub-item-actions">
+              <a href="https://doi.org/10.1016/j.dib.2026.112745" target="_blank" rel="noopener noreferrer" class="pub-link-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1016/j.dib.2026.112745
               </a>
-              <button class="pub-btn copy-citation-btn" data-citation="A. Das, M. R. A. Rashid, M. R. Hasan, K. Shams, and R. U. Islam, 'BDFlower: Growth stage flower image dataset for precision agriculture and floriculture,' Data in Brief, vol. 66, p. 112745, 2026. doi: 10.1016/j.dib.2026.112745.">
+              <button class="pub-link-btn copy-citation-btn" data-citation="A. Das, M. R. A. Rashid, M. R. Hasan, K. Shams, and R. U. Islam, 'BDFlower: Growth stage flower image dataset for precision agriculture and floriculture,' Data in Brief, vol. 66, p. 112745, 2026. doi: 10.1016/j.dib.2026.112745.">
                 <i class="fa-regular fa-copy"></i> Copy Citation
               </button>
             </div>
           </article>
 
           <!-- Publication 2: Scientific Reports GCN (Q1) -->
-          <article class="pub-card" data-type="q1">
-            <div class="pub-header">
-              <div class="pub-badges">
-                <span class="badge-q1"><i class="fa-solid fa-circle-check"></i> Q1 Journal</span>
-                <span class="pub-year">June 2026</span>
+          <article class="editorial-pub-item" data-type="q1">
+            <div class="pub-item-header">
+              <div class="pub-meta-badges">
+                <span class="tag-q1">Q1 Journal</span>
+                <span class="tag-conf">Nature • June 2026</span>
               </div>
-              <span class="pub-venue">Scientific Reports (Nature), Vol. 16, Art. 56866</span>
+              <span class="pub-item-venue">Scientific Reports (Nature), Vol. 16, Art. 56866</span>
             </div>
-            <h3 class="pub-title">
+            <h3 class="pub-item-title">
               <a href="https://doi.org/10.1038/s41598-026-56866-y" target="_blank" rel="noopener noreferrer">
                 Benchmarking hybrid CNN and transformer backbones with graph convolution networks (GCN) for flower growth-stage classification
               </a>
             </h3>
-            <p class="pub-authors">
-              <span class="author-me">A. Das</span>, K. Shams, M. R. A. Rashid, R. U. Islam, S. H. Ripon, and A. W. Reza
+            <p class="pub-item-authors">
+              <span class="me">A. Das</span>, K. Shams, M. R. A. Rashid, R. U. Islam, S. H. Ripon, and A. W. Reza
             </p>
-            <div class="pub-actions">
-              <a href="https://doi.org/10.1038/s41598-026-56866-y" target="_blank" rel="noopener noreferrer" class="pub-btn doi-link">
-                <i class="fa-solid fa-link"></i> DOI: 10.1038/s41598-026-56866-y
+            <div class="pub-item-actions">
+              <a href="https://doi.org/10.1038/s41598-026-56866-y" target="_blank" rel="noopener noreferrer" class="pub-link-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1038/s41598-026-56866-y
               </a>
-              <button class="pub-btn copy-citation-btn" data-citation="A. Das, K. Shams, M. R. A. Rashid, R. U. Islam, S. H. Ripon, and A. W. Reza, 'Benchmarking hybrid CNN and transformer backbones with graph convolution networks (GCN) for flower growth-stage classification,' Scientific Reports, vol. 16, art. 56866, June 2026. doi: 10.1038/s41598-026-56866-y.">
+              <button class="pub-link-btn copy-citation-btn" data-citation="A. Das, K. Shams, M. R. A. Rashid, R. U. Islam, S. H. Ripon, and A. W. Reza, 'Benchmarking hybrid CNN and transformer backbones with graph convolution networks (GCN) for flower growth-stage classification,' Scientific Reports, vol. 16, art. 56866, June 2026. doi: 10.1038/s41598-026-56866-y.">
                 <i class="fa-regular fa-copy"></i> Copy Citation
               </button>
             </div>
           </article>
 
           <!-- Publication 3: BERT-KAN (Q1) -->
-          <article class="pub-card" data-type="q1">
-            <div class="pub-header">
-              <div class="pub-badges">
-                <span class="badge-q1"><i class="fa-solid fa-circle-check"></i> Q1 Journal</span>
-                <span class="pub-year">2025</span>
+          <article class="editorial-pub-item" data-type="q1">
+            <div class="pub-item-header">
+              <div class="pub-meta-badges">
+                <span class="tag-q1">Q1 Journal</span>
+                <span class="tag-conf">2025</span>
               </div>
-              <span class="pub-venue">Natural Language Processing Journal (Elsevier), Vol. 13, p. 100190</span>
+              <span class="pub-item-venue">Natural Language Processing Journal (Elsevier), Vol. 13, p. 100190</span>
             </div>
-            <h3 class="pub-title">
+            <h3 class="pub-item-title">
               <a href="https://doi.org/10.1016/j.nlp.2025.100190" target="_blank" rel="noopener noreferrer">
                 BERT-KAN: Enhancing bilingual sentiment analysis in Bangladeshi e-commerce through fine-tuned large language models
               </a>
             </h3>
-            <p class="pub-authors">
-              M. R. A. Rashid, <span class="author-me">A. Das</span>, K. F. Hasan, M. R. Hasan, M. Sultana, M. Hasan, R. U. Islam, R. A. Tuhin, and M. S. H. Khan
+            <p class="pub-item-authors">
+              M. R. A. Rashid, <span class="me">A. Das</span>, K. F. Hasan, M. R. Hasan, M. Sultana, M. Hasan, R. U. Islam, R. A. Tuhin, and M. S. H. Khan
             </p>
-            <div class="pub-actions">
-              <a href="https://doi.org/10.1016/j.nlp.2025.100190" target="_blank" rel="noopener noreferrer" class="pub-btn doi-link">
-                <i class="fa-solid fa-link"></i> DOI: 10.1016/j.nlp.2025.100190
+            <div class="pub-item-actions">
+              <a href="https://doi.org/10.1016/j.nlp.2025.100190" target="_blank" rel="noopener noreferrer" class="pub-link-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1016/j.nlp.2025.100190
               </a>
-              <button class="pub-btn copy-citation-btn" data-citation="M. R. A. Rashid, A. Das, K. F. Hasan, M. R. Hasan, M. Sultana, M. Hasan, R. U. Islam, R. A. Tuhin, and M. S. H. Khan, 'BERT-KAN: Enhancing bilingual sentiment analysis in Bangladeshi e-commerce through fine-tuned large language models,' Natural Language Processing Journal, vol. 13, p. 100190, 2025. doi: 10.1016/j.nlp.2025.100190.">
+              <button class="pub-link-btn copy-citation-btn" data-citation="M. R. A. Rashid, A. Das, K. F. Hasan, M. R. Hasan, M. Sultana, M. Hasan, R. U. Islam, R. A. Tuhin, and M. S. H. Khan, 'BERT-KAN: Enhancing bilingual sentiment analysis in Bangladeshi e-commerce through fine-tuned large language models,' Natural Language Processing Journal, vol. 13, p. 100190, 2025. doi: 10.1016/j.nlp.2025.100190.">
                 <i class="fa-regular fa-copy"></i> Copy Citation
               </button>
             </div>
           </article>
 
-          <!-- Publication 4: TFP-BD (Q1) -->
-          <article class="pub-card" data-type="q1">
-            <div class="pub-header">
-              <div class="pub-badges">
-                <span class="badge-q1"><i class="fa-solid fa-circle-check"></i> Q1 Journal</span>
-                <span class="pub-year">2025</span>
+          <!-- Publication 4: CodeMixEcom-Emotion (BEST PAPER AWARD) -->
+          <article class="editorial-pub-item" data-type="award conference">
+            <div class="pub-item-header">
+              <div class="pub-meta-badges">
+                <span class="tag-award">★ Best Paper Award</span>
+                <span class="tag-conf">AII 2025 • Washington D.C.</span>
               </div>
-              <span class="pub-venue">Data in Brief (Elsevier), Vol. 59, p. 111398</span>
+              <span class="pub-item-venue">5th Int. Conf. on Applied Intelligence and Informatics (AII 2025), USA</span>
             </div>
-            <h3 class="pub-title">
+            <h3 class="pub-item-title">
+              CodeMixEcom-Emotion: A large-scale Bangla-English review corpus and transformer-based benchmark for fine-grained emotion detection
+            </h3>
+            <p class="pub-item-authors">
+              <span class="me">A. Das et al.</span>
+            </p>
+            <div class="pub-item-actions">
+              <span class="pub-link-btn" style="color: var(--accent-amber); border-color: rgba(217, 119, 6, 0.3);">
+                <i class="fa-solid fa-trophy"></i> Best Paper Award Winner
+              </span>
+              <button class="pub-link-btn copy-citation-btn" data-citation="A. Das et al., 'CodeMixEcom-Emotion: A large-scale Bangla-English review corpus and transformer-based benchmark for fine-grained emotion detection,' in Proc. 5th Int. Conf. on Applied Intelligence and Informatics (AII), Washington, D.C., USA, 2025. (Best Paper Award).">
+                <i class="fa-regular fa-copy"></i> Copy Citation
+              </button>
+            </div>
+          </article>
+
+          <!-- Publication 5: TFP-BD (Q1) -->
+          <article class="editorial-pub-item" data-type="q1">
+            <div class="pub-item-header">
+              <div class="pub-meta-badges">
+                <span class="tag-q1">Q1 Journal</span>
+                <span class="tag-conf">2025</span>
+              </div>
+              <span class="pub-item-venue">Data in Brief (Elsevier), Vol. 59, p. 111398</span>
+            </div>
+            <h3 class="pub-item-title">
               <a href="https://doi.org/10.1016/j.dib.2025.111398" target="_blank" rel="noopener noreferrer">
                 TFP-BD: An image dataset for traffic flow and pedestrian movement analysis on Bangladeshi urban roads
               </a>
             </h3>
-            <p class="pub-authors">
-              M. M. Islam, <span class="author-me">A. Das</span>, K. Shams, M. R. Hasan, K. F. Hasan, M. R. Rashid, A. Chowdhury, M. S. Ali, M. Islam, M. Shahjalal, and S. Masum
+            <p class="pub-item-authors">
+              M. M. Islam, <span class="me">A. Das</span>, K. Shams, M. R. Hasan, K. F. Hasan, M. R. Rashid, A. Chowdhury, M. S. Ali, M. Islam, M. Shahjalal, and S. Masum
             </p>
-            <div class="pub-actions">
-              <a href="https://doi.org/10.1016/j.dib.2025.111398" target="_blank" rel="noopener noreferrer" class="pub-btn doi-link">
-                <i class="fa-solid fa-link"></i> DOI: 10.1016/j.dib.2025.111398
+            <div class="pub-item-actions">
+              <a href="https://doi.org/10.1016/j.dib.2025.111398" target="_blank" rel="noopener noreferrer" class="pub-link-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1016/j.dib.2025.111398
               </a>
-              <button class="pub-btn copy-citation-btn" data-citation="M. M. Islam, A. Das, K. Shams, M. R. Hasan, K. F. Hasan, M. R. Rashid, A. Chowdhury, M. S. Ali, M. Islam, M. Shahjalal, and S. Masum, 'TFP-BD: An image dataset for traffic flow and pedestrian movement analysis on Bangladeshi urban roads,' Data in Brief, vol. 59, p. 111398, 2025. doi: 10.1016/j.dib.2025.111398.">
+              <button class="pub-link-btn copy-citation-btn" data-citation="M. M. Islam, A. Das, K. Shams, M. R. Hasan, K. F. Hasan, M. R. Rashid, A. Chowdhury, M. S. Ali, M. Islam, M. Shahjalal, and S. Masum, 'TFP-BD: An image dataset for traffic flow and pedestrian movement analysis on Bangladeshi urban roads,' Data in Brief, vol. 59, p. 111398, 2025. doi: 10.1016/j.dib.2025.111398.">
                 <i class="fa-regular fa-copy"></i> Copy Citation
               </button>
             </div>
           </article>
 
-          <!-- Publication 5: BD E-Commerce Sentiment (Q1) -->
-          <article class="pub-card" data-type="q1">
-            <div class="pub-header">
-              <div class="pub-badges">
-                <span class="badge-q1"><i class="fa-solid fa-circle-check"></i> Q1 Journal</span>
-                <span class="pub-year">2024</span>
+          <!-- Publication 6: BD E-Commerce Sentiment (Q1) -->
+          <article class="editorial-pub-item" data-type="q1">
+            <div class="pub-item-header">
+              <div class="pub-meta-badges">
+                <span class="tag-q1">Q1 Journal</span>
+                <span class="tag-conf">2024</span>
               </div>
-              <span class="pub-venue">Data in Brief (Elsevier), Vol. 53, p. 110052</span>
+              <span class="pub-item-venue">Data in Brief (Elsevier), Vol. 53, p. 110052</span>
             </div>
-            <h3 class="pub-title">
+            <h3 class="pub-item-title">
               <a href="https://doi.org/10.1016/j.dib.2024.110052" target="_blank" rel="noopener noreferrer">
                 A comprehensive dataset for sentiment and emotion classification from Bangladesh e-commerce reviews
               </a>
             </h3>
-            <p class="pub-authors">
-              M. R. A. Rashid, K. F. Hasan, M. R. Hasan, <span class="author-me">A. Das</span>, M. Sultana, and M. Hasan
+            <p class="pub-item-authors">
+              M. R. A. Rashid, K. F. Hasan, M. R. Hasan, <span class="me">A. Das</span>, M. Sultana, and M. Hasan
             </p>
-            <div class="pub-actions">
-              <a href="https://doi.org/10.1016/j.dib.2024.110052" target="_blank" rel="noopener noreferrer" class="pub-btn doi-link">
-                <i class="fa-solid fa-link"></i> DOI: 10.1016/j.dib.2024.110052
+            <div class="pub-item-actions">
+              <a href="https://doi.org/10.1016/j.dib.2024.110052" target="_blank" rel="noopener noreferrer" class="pub-link-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1016/j.dib.2024.110052
               </a>
-              <button class="pub-btn copy-citation-btn" data-citation="M. R. A. Rashid, K. F. Hasan, M. R. Hasan, A. Das, M. Sultana, and M. Hasan, 'A comprehensive dataset for sentiment and emotion classification from Bangladesh e-commerce reviews,' Data in Brief, vol. 53, p. 110052, 2024. doi: 10.1016/j.dib.2024.110052.">
+              <button class="pub-link-btn copy-citation-btn" data-citation="M. R. A. Rashid, K. F. Hasan, M. R. Hasan, A. Das, M. Sultana, and M. Hasan, 'A comprehensive dataset for sentiment and emotion classification from Bangladesh e-commerce reviews,' Data in Brief, vol. 53, p. 110052, 2024. doi: 10.1016/j.dib.2024.110052.">
                 <i class="fa-regular fa-copy"></i> Copy Citation
               </button>
             </div>
           </article>
 
-          <!-- Publication 6: BDMANGO (Q1) -->
-          <article class="pub-card" data-type="q1">
-            <div class="pub-header">
-              <div class="pub-badges">
-                <span class="badge-q1"><i class="fa-solid fa-circle-check"></i> Q1 Journal</span>
-                <span class="pub-year">2025</span>
+          <!-- Publication 7: BDMANGO (Q1) -->
+          <article class="editorial-pub-item" data-type="q1">
+            <div class="pub-item-header">
+              <div class="pub-meta-badges">
+                <span class="tag-q1">Q1 Journal</span>
+                <span class="tag-conf">2025</span>
               </div>
-              <span class="pub-venue">Data in Brief (Elsevier), Vol. 58, p. 111241</span>
+              <span class="pub-item-venue">Data in Brief (Elsevier), Vol. 58, p. 111241</span>
             </div>
-            <h3 class="pub-title">
+            <h3 class="pub-item-title">
               <a href="https://doi.org/10.1016/j.dib.2024.111241" target="_blank" rel="noopener noreferrer">
                 BDMANGO: An image dataset for identifying the variety of mango based on the mango leaves
               </a>
             </h3>
-            <p class="pub-authors">
-              M. M. Islam, M. J. Ahmed, M. B. Shafi, <span class="author-me">A. Das</span>, M. R. Hasan, A. A. Rafi, M. R. Rashid, N. T. Niloy, M. S. Ali, A. Chowdhury, and A. A. Rasel
+            <p class="pub-item-authors">
+              M. M. Islam, M. J. Ahmed, M. B. Shafi, <span class="me">A. Das</span>, M. R. Hasan, A. A. Rafi, M. R. Rashid, N. T. Niloy, M. S. Ali, A. Chowdhury, and A. A. Rasel
             </p>
-            <div class="pub-actions">
-              <a href="https://doi.org/10.1016/j.dib.2024.111241" target="_blank" rel="noopener noreferrer" class="pub-btn doi-link">
-                <i class="fa-solid fa-link"></i> DOI: 10.1016/j.dib.2024.111241
+            <div class="pub-item-actions">
+              <a href="https://doi.org/10.1016/j.dib.2024.111241" target="_blank" rel="noopener noreferrer" class="pub-link-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1016/j.dib.2024.111241
               </a>
-              <button class="pub-btn copy-citation-btn" data-citation="M. M. Islam, M. J. Ahmed, M. B. Shafi, A. Das, M. R. Hasan, A. A. Rafi, M. R. Rashid, N. T. Niloy, M. S. Ali, A. Chowdhury, and A. A. Rasel, 'BDMANGO: An image dataset for identifying the variety of mango based on the mango leaves,' Data in Brief, vol. 58, p. 111241, 2025. doi: 10.1016/j.dib.2024.111241.">
+              <button class="pub-link-btn copy-citation-btn" data-citation="M. M. Islam, M. J. Ahmed, M. B. Shafi, A. Das, M. R. Hasan, A. A. Rafi, M. R. Rashid, N. T. Niloy, M. S. Ali, A. Chowdhury, and A. A. Rasel, 'BDMANGO: An image dataset for identifying the variety of mango based on the mango leaves,' Data in Brief, vol. 58, p. 111241, 2025. doi: 10.1016/j.dib.2024.111241.">
                 <i class="fa-regular fa-copy"></i> Copy Citation
               </button>
             </div>
           </article>
 
-          <!-- Publication 7: CodeMixEcom-Emotion (BEST PAPER AWARD) -->
-          <article class="pub-card is-award" data-type="award conference">
-            <div class="pub-header">
-              <div class="pub-badges">
-                <span class="badge-award"><i class="fa-solid fa-trophy"></i> Best Paper Award</span>
-                <span class="badge-conf">AII 2025 Conference</span>
-                <span class="pub-year">2025</span>
+          <!-- Publication 8: Swin Transformer Kidney CT (Conference) -->
+          <article class="editorial-pub-item" data-type="conference">
+            <div class="pub-item-header">
+              <div class="pub-meta-badges">
+                <span class="tag-conf">IEEE Conference</span>
+                <span class="tag-conf">2025</span>
               </div>
-              <span class="pub-venue">5th Int. Conf. on Applied Intelligence and Informatics (AII), Washington, D.C., USA</span>
+              <span class="pub-item-venue">IEEE SPICSCON 2025, pp. 766–771</span>
             </div>
-            <h3 class="pub-title">
-              CodeMixEcom-Emotion: A large-scale Bangla-English review corpus and transformer-based benchmark for fine-grained emotion detection
-            </h3>
-            <p class="pub-authors">
-              <span class="author-me">A. Das et al.</span>
-            </p>
-            <div class="pub-actions">
-              <span class="pub-btn" style="color: #fbbf24; border-color: rgba(245, 158, 11, 0.4);">
-                <i class="fa-solid fa-star"></i> Best Paper Award Winner
-              </span>
-              <button class="pub-btn copy-citation-btn" data-citation="A. Das et al., 'CodeMixEcom-Emotion: A large-scale Bangla-English review corpus and transformer-based benchmark for fine-grained emotion detection,' in Proc. 5th Int. Conf. on Applied Intelligence and Informatics (AII), Washington, D.C., USA, 2025. (Best Paper Award).">
-                <i class="fa-regular fa-copy"></i> Copy Citation
-              </button>
-            </div>
-          </article>
-
-          <!-- Publication 8: Kidney CT Swin Transformer (Conference) -->
-          <article class="pub-card" data-type="conference">
-            <div class="pub-header">
-              <div class="pub-badges">
-                <span class="badge-conf">IEEE Conference</span>
-                <span class="pub-year">2025</span>
-              </div>
-              <span class="pub-venue">IEEE SPICSCON 2025, pp. 766–771</span>
-            </div>
-            <h3 class="pub-title">
+            <h3 class="pub-item-title">
               <a href="https://doi.org/10.1109/SPICSCON69221.2025.11504242" target="_blank" rel="noopener noreferrer">
                 Towards annotation-efficient kidney CT scan classification: Supervised and semi-supervised Swin Transformer frameworks
               </a>
             </h3>
-            <p class="pub-authors">
-              <span class="author-me">A. Das</span>, K. Shams, M. R. Hasan, M. R. A. Rashid, R. A. Tuhin, M. S. H. Khan, and R. U. Islam
+            <p class="pub-item-authors">
+              <span class="me">A. Das</span>, K. Shams, M. R. Hasan, M. R. A. Rashid, R. A. Tuhin, M. S. H. Khan, and R. U. Islam
             </p>
-            <div class="pub-actions">
-              <a href="https://doi.org/10.1109/SPICSCON69221.2025.11504242" target="_blank" rel="noopener noreferrer" class="pub-btn doi-link">
-                <i class="fa-solid fa-link"></i> DOI: 10.1109/SPICSCON69221.2025.11504242
+            <div class="pub-item-actions">
+              <a href="https://doi.org/10.1109/SPICSCON69221.2025.11504242" target="_blank" rel="noopener noreferrer" class="pub-link-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1109/SPICSCON69221.2025.11504242
               </a>
-              <button class="pub-btn copy-citation-btn" data-citation="A. Das, K. Shams, M. R. Hasan, M. R. A. Rashid, R. A. Tuhin, M. S. H. Khan, and R. U. Islam, 'Towards annotation-efficient kidney CT scan classification: Supervised and semi-supervised Swin Transformer frameworks,' in Proc. 2025 IEEE Int. Conf. on Signal Processing, Information, Communication and Systems (SPICSCON), 2025, pp. 766–771.">
+              <button class="pub-link-btn copy-citation-btn" data-citation="A. Das, K. Shams, M. R. Hasan, M. R. A. Rashid, R. A. Tuhin, M. S. H. Khan, and R. U. Islam, 'Towards annotation-efficient kidney CT scan classification: Supervised and semi-supervised Swin Transformer frameworks,' in Proc. 2025 IEEE Int. Conf. on Signal Processing, Information, Communication and Systems (SPICSCON), 2025, pp. 766–771.">
                 <i class="fa-regular fa-copy"></i> Copy Citation
               </button>
             </div>
           </article>
 
           <!-- Publication 9: Data Lakehouse ETL (Conference) -->
-          <article class="pub-card" data-type="conference">
-            <div class="pub-header">
-              <div class="pub-badges">
-                <span class="badge-conf">IEEE Conference</span>
-                <span class="pub-year">2025</span>
+          <article class="editorial-pub-item" data-type="conference">
+            <div class="pub-item-header">
+              <div class="pub-meta-badges">
+                <span class="tag-conf">IEEE Conference</span>
+                <span class="tag-conf">2025</span>
               </div>
-              <span class="pub-venue">IEEE ICCIT 2025, pp. 3440–3445</span>
+              <span class="pub-item-venue">IEEE ICCIT 2025, pp. 3440–3445</span>
             </div>
-            <h3 class="pub-title">
+            <h3 class="pub-item-title">
               <a href="https://doi.org/10.1109/ICCIT68739.2025.11491349" target="_blank" rel="noopener noreferrer">
                 Fast, fault-tolerant, and affordable: A modern data lakehouse ETL pipeline for emerging economies
               </a>
             </h3>
-            <p class="pub-authors">
-              S. Hossen, <span class="author-me">A. Das</span>, M. R. Hasan, and M. R. Huq
+            <p class="pub-item-authors">
+              S. Hossen, <span class="me">A. Das</span>, M. R. Hasan, and M. R. Huq
             </p>
-            <div class="pub-actions">
-              <a href="https://doi.org/10.1109/ICCIT68739.2025.11491349" target="_blank" rel="noopener noreferrer" class="pub-btn doi-link">
-                <i class="fa-solid fa-link"></i> DOI: 10.1109/ICCIT68739.2025.11491349
+            <div class="pub-item-actions">
+              <a href="https://doi.org/10.1109/ICCIT68739.2025.11491349" target="_blank" rel="noopener noreferrer" class="pub-link-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1109/ICCIT68739.2025.11491349
               </a>
-              <button class="pub-btn copy-citation-btn" data-citation="S. Hossen, A. Das, M. R. Hasan, and M. R. Huq, 'Fast, fault-tolerant, and affordable: A modern data lakehouse ETL pipeline for emerging economies,' in Proc. 2025 28th Int. Conf. on Computer and Information Technology (ICCIT), 2025, pp. 3440–3445.">
+              <button class="pub-link-btn copy-citation-btn" data-citation="S. Hossen, A. Das, M. R. Hasan, and M. R. Huq, 'Fast, fault-tolerant, and affordable: A modern data lakehouse ETL pipeline for emerging economies,' in Proc. 2025 28th Int. Conf. on Computer and Information Technology (ICCIT), 2025, pp. 3440–3445.">
                 <i class="fa-regular fa-copy"></i> Copy Citation
               </button>
             </div>
           </article>
 
           <!-- Publication 10: Lung Cancer Histopathology (Conference) -->
-          <article class="pub-card" data-type="conference">
-            <div class="pub-header">
-              <div class="pub-badges">
-                <span class="badge-conf">Springer Nature</span>
-                <span class="pub-year">2025</span>
+          <article class="editorial-pub-item" data-type="conference">
+            <div class="pub-item-header">
+              <div class="pub-meta-badges">
+                <span class="tag-conf">Springer Nature</span>
+                <span class="tag-conf">2025</span>
               </div>
-              <span class="pub-venue">Data Mining and Information Security: Proc. of ICDMIS 2024, Springer Nature, p. 283</span>
+              <span class="pub-item-venue">Data Mining &amp; Info Security: Proc. of ICDMIS 2024, Springer, p. 283</span>
             </div>
-            <h3 class="pub-title">
+            <h3 class="pub-item-title">
               Histopathology images-based deep learning prediction of prognosis and therapeutic response in small cell lung cancer
             </h3>
-            <p class="pub-authors">
-              K. Shams, <span class="author-me">A. Das</span>, M. R. Hasan, M. Sultana, M. A. Morshed, and A. W. Reza
+            <p class="pub-item-authors">
+              K. Shams, <span class="me">A. Das</span>, M. R. Hasan, M. Sultana, M. A. Morshed, and A. W. Reza
             </p>
-            <div class="pub-actions">
-              <button class="pub-btn copy-citation-btn" data-citation="K. Shams, A. Das, M. R. Hasan, M. Sultana, M. A. Morshed, and A. W. Reza, 'Histopathology images-based deep learning prediction of prognosis and therapeutic response in small cell lung cancer,' in Data Mining and Information Security: Proceedings of ICDMIS 2024, vol. 5, Springer Nature, 2025, p. 283.">
+            <div class="pub-item-actions">
+              <button class="pub-link-btn copy-citation-btn" data-citation="K. Shams, A. Das, M. R. Hasan, M. Sultana, M. A. Morshed, and A. W. Reza, 'Histopathology images-based deep learning prediction of prognosis and therapeutic response in small cell lung cancer,' in Data Mining and Information Security: Proceedings of ICDMIS 2024, vol. 5, Springer Nature, 2025, p. 283.">
                 <i class="fa-regular fa-copy"></i> Copy Citation
               </button>
             </div>
           </article>
 
           <!-- Publication 11: Load Balancing Markov Chain (Conference) -->
-          <article class="pub-card" data-type="conference">
-            <div class="pub-header">
-              <div class="pub-badges">
-                <span class="badge-conf">IEEE Conference</span>
-                <span class="pub-year">2024</span>
+          <article class="editorial-pub-item" data-type="conference">
+            <div class="pub-item-header">
+              <div class="pub-meta-badges">
+                <span class="tag-conf">IEEE Conference</span>
+                <span class="tag-conf">2024</span>
               </div>
-              <span class="pub-venue">IEEE ICISET 2024, pp. 1–6</span>
+              <span class="pub-item-venue">IEEE ICISET 2024, pp. 1–6</span>
             </div>
-            <h3 class="pub-title">
+            <h3 class="pub-item-title">
               <a href="https://doi.org/10.1109/ICISET62123.2024.11003920" target="_blank" rel="noopener noreferrer">
                 Load balancing algorithm: A Markov chain model using queuing theory approach
               </a>
             </h3>
-            <p class="pub-authors">
-              K. F. Hasan, <span class="author-me">A. Das</span>, J. F. Salma, R. A. Tuhin, N. Hoque, A. W. Reza, and M. S. Arefin
+            <p class="pub-item-authors">
+              K. F. Hasan, <span class="me">A. Das</span>, J. F. Salma, R. A. Tuhin, N. Hoque, A. W. Reza, and M. S. Arefin
             </p>
-            <div class="pub-actions">
-              <a href="https://doi.org/10.1109/ICISET62123.2024.11003920" target="_blank" rel="noopener noreferrer" class="pub-btn doi-link">
-                <i class="fa-solid fa-link"></i> DOI: 10.1109/ICISET62123.2024.11003920
+            <div class="pub-item-actions">
+              <a href="https://doi.org/10.1109/ICISET62123.2024.11003920" target="_blank" rel="noopener noreferrer" class="pub-link-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1109/ICISET62123.2024.11003920
               </a>
-              <button class="pub-btn copy-citation-btn" data-citation="K. F. Hasan, A. Das, J. F. Salma, R. A. Tuhin, N. Hoque, A. W. Reza, and M. S. Arefin, 'Load balancing algorithm: A Markov chain model using queuing theory approach,' in Proc. 2024 Int. Conf. on Innovations in Science, Engineering and Technology (ICISET), 2024, pp. 1–6.">
+              <button class="pub-link-btn copy-citation-btn" data-citation="K. F. Hasan, A. Das, J. F. Salma, R. A. Tuhin, N. Hoque, A. W. Reza, and M. S. Arefin, 'Load balancing algorithm: A Markov chain model using queuing theory approach,' in Proc. 2024 Int. Conf. on Innovations in Science, Engineering and Technology (ICISET), 2024, pp. 1–6.">
                 <i class="fa-regular fa-copy"></i> Copy Citation
               </button>
             </div>
           </article>
 
         </div>
+
       </div>
     </section>
 
     <!-- ==========================================================================
-         FEATURED RESEARCH & TECHNICAL PROJECTS
+         SELECTED WORK / PROJECTS (3-COLUMN EDITORIAL SHOWCASE)
          ========================================================================== -->
     <section class="section" id="projects">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag"><i class="fa-solid fa-microchip"></i> Engineering</div>
-          <h2 class="section-title">Research & Technical <span class="gradient-text">Projects</span></h2>
-          <p class="section-subtitle">
-            From self-supervised computer vision algorithms to LLM fine-tuning and end-to-end production pipelines.
-          </p>
-        </div>
+        
+        <div class="section-label">// SELECTED WORK</div>
+        <h2 class="section-editorial-h2">Engineered Systems &amp; Code.</h2>
+        <p class="section-editorial-p">
+          Applied systems ranging from self-supervised visual classifiers to low-latency RAG vector architectures.
+        </p>
 
-        <!-- Category Filters -->
-        <div class="project-filters">
-          <button class="filter-btn active" data-category="all">All Projects</button>
-          <button class="filter-btn" data-category="ssl-vision">Computer Vision & SSL</button>
-          <button class="filter-btn" data-category="nlp-llm">LLM & GenAI</button>
-          <button class="filter-btn" data-category="fullstack">Full-Stack & Systems</button>
-        </div>
-
-        <div class="projects-grid">
+        <div class="projects-editorial-grid">
           
-          <!-- Project 1: Self-Supervised Malware Classification -->
-          <div class="project-card" data-category="ssl-vision">
+          <!-- Project 1 -->
+          <div class="editorial-project-card">
             <div>
-              <div class="project-top-meta">
-                <span class="project-category-tag"><i class="fa-solid fa-shield-halved"></i> Cybersecurity & SSL</span>
-                <div class="project-links">
-                  <a href="https://github.com/Aritra232" target="_blank" class="project-icon-link" title="Source Code"><i class="fa-brands fa-github"></i></a>
-                </div>
+              <div class="project-meta-top">
+                <span class="project-cat-mono">CYBERSECURITY &amp; SSL</span>
+                <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">2025</span>
               </div>
-              <h3 class="project-title">Self-Supervised Malware Classification</h3>
-              <p class="project-desc">
-                Pioneered self-supervised deep learning frameworks to classify malware binaries converted into 2D visual representations without requiring costly human labeling.
+              <h3 class="project-card-h3">Self-Supervised Malware Representation</h3>
+              <p class="project-card-p">
+                Pioneered self-supervised deep learning architectures to classify binary malware converted into 2D visual encodings without requiring labor-intensive ground-truth labels.
               </p>
-              <ul class="project-highlights-list">
-                <li><i class="fa-solid fa-arrow-right"></i> Implemented contrastive & masked-image modeling (SimCLR, MoCo, BYOL, MAE).</li>
-                <li><i class="fa-solid fa-arrow-right"></i> Optimized ResNet architectures for high-precision label-efficient representation.</li>
-              </ul>
             </div>
-            <div class="project-tags">
-              <span class="tech-tag">SimCLR</span>
-              <span class="tech-tag">MoCo</span>
-              <span class="tech-tag">BYOL</span>
-              <span class="tech-tag">MAE</span>
-              <span class="tech-tag">PyTorch</span>
-              <span class="tech-tag">ResNet</span>
+            <div>
+              <div class="project-tags-strip">
+                <span class="tech-mini-pill">SimCLR</span>
+                <span class="tech-mini-pill">MoCo</span>
+                <span class="tech-mini-pill">BYOL</span>
+                <span class="tech-mini-pill">MAE</span>
+                <span class="tech-mini-pill">PyTorch</span>
+              </div>
+              <a href="https://github.com/Aritra232" target="_blank" rel="noopener noreferrer" class="project-case-link">
+                <span>View on GitHub</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
           </div>
 
-          <!-- Project 2: Flower Growth Stage Classification -->
-          <div class="project-card" data-category="ssl-vision">
+          <!-- Project 2 -->
+          <div class="editorial-project-card">
             <div>
-              <div class="project-top-meta">
-                <span class="project-category-tag"><i class="fa-solid fa-seedling"></i> Precision Agriculture</span>
-                <div class="project-links">
-                  <a href="https://doi.org/10.1038/s41598-026-56866-y" target="_blank" class="project-icon-link" title="Scientific Reports Paper"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  <a href="https://github.com/Aritra232" target="_blank" class="project-icon-link" title="GitHub Code"><i class="fa-brands fa-github"></i></a>
-                </div>
+              <div class="project-meta-top">
+                <span class="project-cat-mono">BOTANICAL &amp; GCN</span>
+                <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">2026</span>
               </div>
-              <h3 class="project-title">Flower Growth Stage Classification (SSL + GCN)</h3>
-              <p class="project-desc">
-                Architected a hybrid prediction framework blending four self-supervised learning backbones with a Graph Convolutional Network (GCN) to capture spatial and relational features.
+              <h3 class="project-card-h3">Hybrid Vision &amp; Graph Neural Backbone</h3>
+              <p class="project-card-p">
+                Architected a dual-stage framework coupling four self-supervised vision backbones with Graph Convolutional Networks (GCN) to classify flower growth-stages under ambient variations.
               </p>
-              <ul class="project-highlights-list">
-                <li><i class="fa-solid fa-arrow-right"></i> Built custom dataset of 8 flower species captured across 3 months in multiple lighting conditions.</li>
-                <li><i class="fa-solid fa-arrow-right"></i> Published in Nature Scientific Reports (Q1) & Data in Brief (Q1).</li>
-              </ul>
             </div>
-            <div class="project-tags">
-              <span class="tech-tag">GCN</span>
-              <span class="tech-tag">Graph Neural Nets</span>
-              <span class="tech-tag">Vision Transformers</span>
-              <span class="tech-tag">SSL</span>
-              <span class="tech-tag">PyTorch</span>
+            <div>
+              <div class="project-tags-strip">
+                <span class="tech-mini-pill">GCN</span>
+                <span class="tech-mini-pill">Swin Transformer</span>
+                <span class="tech-mini-pill">Scientific Reports</span>
+                <span class="tech-mini-pill">PyTorch</span>
+              </div>
+              <a href="https://doi.org/10.1038/s41598-026-56866-y" target="_blank" rel="noopener noreferrer" class="project-case-link">
+                <span>Read Nature Paper</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
           </div>
 
-          <!-- Project 3: Real-Time Safety Kit Detection -->
-          <div class="project-card" data-category="ssl-vision">
+          <!-- Project 3 -->
+          <div class="editorial-project-card">
             <div>
-              <div class="project-top-meta">
-                <span class="project-category-tag"><i class="fa-solid fa-helmet-safety"></i> Industrial AI</span>
-                <div class="project-links">
-                  <a href="https://github.com/Aritra232" target="_blank" class="project-icon-link" title="GitHub Code"><i class="fa-brands fa-github"></i></a>
-                </div>
+              <div class="project-meta-top">
+                <span class="project-cat-mono">GENAI &amp; RAG PIPELINES</span>
+                <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">2024</span>
               </div>
-              <h3 class="project-title">Real-Time Safety Kit Compliance Detection</h3>
-              <p class="project-desc">
-                Industrial safety compliance monitoring system using edge computer vision directly connected to CCTV feeds for automated protocol enforcement.
+              <h3 class="project-card-h3">Bilingual Product Recommendation RAG</h3>
+              <p class="project-card-p">
+                Fine-tuned open-source LLaMA-2-7B on regional e-commerce transcripts and coupled it with Pinecone vector indices for sub-second semantic retrieval and localized conversation.
               </p>
-              <ul class="project-highlights-list">
-                <li><i class="fa-solid fa-arrow-right"></i> Integrated YOLO model with Hikvision CCTV RTSP streams.</li>
-                <li><i class="fa-solid fa-arrow-right"></i> Automated Telegram bot alerts with annotated incident images when workers miss safety gear.</li>
-              </ul>
             </div>
-            <div class="project-tags">
-              <span class="tech-tag">YOLO</span>
-              <span class="tech-tag">Hikvision CCTV</span>
-              <span class="tech-tag">OpenCV</span>
-              <span class="tech-tag">Telegram Bot API</span>
-              <span class="tech-tag">Python</span>
+            <div>
+              <div class="project-tags-strip">
+                <span class="tech-mini-pill">LLaMA-2</span>
+                <span class="tech-mini-pill">Pinecone</span>
+                <span class="tech-mini-pill">LangChain</span>
+                <span class="tech-mini-pill">FastAPI</span>
+              </div>
+              <a href="https://github.com/Aritra232" target="_blank" rel="noopener noreferrer" class="project-case-link">
+                <span>View on GitHub</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
           </div>
 
-          <!-- Project 4: Bangladeshi Product Recommendation Chatbot -->
-          <div class="project-card" data-category="nlp-llm">
+          <!-- Project 4 -->
+          <div class="editorial-project-card">
             <div>
-              <div class="project-top-meta">
-                <span class="project-category-tag"><i class="fa-solid fa-robot"></i> Capstone & GenAI</span>
-                <div class="project-links">
-                  <a href="https://github.com/Aritra232" target="_blank" class="project-icon-link" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
-                </div>
+              <div class="project-meta-top">
+                <span class="project-cat-mono">EDGE VISION &amp; IOT</span>
+                <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">2024</span>
               </div>
-              <h3 class="project-title">Product Recommendation Chatbot (LLaMA-2 + RAG)</h3>
-              <p class="project-desc">
-                Intelligent conversational AI shopping assistant that understands bilingual user intent and retrieves hyper-personalized product recommendations in real-time.
+              <h3 class="project-card-h3">Real-Time Industrial Safety Detection</h3>
+              <p class="project-card-p">
+                Automated workplace safety compliance by connecting fine-tuned YOLO detectors to live Hikvision RTSP camera feeds, triggering automated Telegram dispatch alerts for missing gear.
               </p>
-              <ul class="project-highlights-list">
-                <li><i class="fa-solid fa-arrow-right"></i> Fine-tuned open-source LLaMA-2-7B model for regional shopping queries.</li>
-                <li><i class="fa-solid fa-arrow-right"></i> Utilized Pinecone vector database for sub-second semantic similarity search.</li>
-              </ul>
             </div>
-            <div class="project-tags">
-              <span class="tech-tag">LLaMA-2-7B</span>
-              <span class="tech-tag">Pinecone Vector DB</span>
-              <span class="tech-tag">RAG</span>
-              <span class="tech-tag">LangChain</span>
-              <span class="tech-tag">FastAPI</span>
+            <div>
+              <div class="project-tags-strip">
+                <span class="tech-mini-pill">YOLO</span>
+                <span class="tech-mini-pill">Hikvision CCTV</span>
+                <span class="tech-mini-pill">OpenCV</span>
+                <span class="tech-mini-pill">Telegram API</span>
+              </div>
+              <a href="https://github.com/Aritra232" target="_blank" rel="noopener noreferrer" class="project-case-link">
+                <span>View on GitHub</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
           </div>
 
-          <!-- Project 5: Vehicle Detection & Traffic Flow Prediction -->
-          <div class="project-card" data-category="ssl-vision">
+          <!-- Project 5 -->
+          <div class="editorial-project-card">
             <div>
-              <div class="project-top-meta">
-                <span class="project-category-tag"><i class="fa-solid fa-car-side"></i> Smart Cities</span>
-                <div class="project-links">
-                  <a href="https://doi.org/10.1016/j.dib.2025.111398" target="_blank" class="project-icon-link" title="Published Paper"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  <a href="https://github.com/Aritra232" target="_blank" class="project-icon-link" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
-                </div>
+              <div class="project-meta-top">
+                <span class="project-cat-mono">URBAN COMPUTING &amp; DATA</span>
+                <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">2025</span>
               </div>
-              <h3 class="project-title">Dhaka Traffic Flow & Pedestrian Prediction</h3>
-              <p class="project-desc">
-                Collected real-world video telemetry across congested Dhaka junctions, deployed YOLO vehicle detectors, and predicted traffic flow via self-supervised sequences.
+              <h3 class="project-card-h3">Dhaka Traffic &amp; Pedestrian Telemetry</h3>
+              <p class="project-card-p">
+                Aggregated and labeled video telemetry across dense junctions in Dhaka to construct TFP-BD, modeling heterogeneous urban road bottlenecks and pedestrian trajectories.
               </p>
-              <ul class="project-highlights-list">
-                <li><i class="fa-solid fa-arrow-right"></i> Published landmark benchmark dataset (TFP-BD in Data in Brief Q1).</li>
-                <li><i class="fa-solid fa-arrow-right"></i> Trajectory and bottleneck modeling under dense, heterogeneous urban traffic.</li>
-              </ul>
             </div>
-            <div class="project-tags">
-              <span class="tech-tag">YOLO</span>
-              <span class="tech-tag">Self-Supervised Learning</span>
-              <span class="tech-tag">Data in Brief Q1</span>
-              <span class="tech-tag">PyTorch</span>
+            <div>
+              <div class="project-tags-strip">
+                <span class="tech-mini-pill">YOLO</span>
+                <span class="tech-mini-pill">Data in Brief Q1</span>
+                <span class="tech-mini-pill">PyTorch</span>
+                <span class="tech-mini-pill">Telemetry</span>
+              </div>
+              <a href="https://doi.org/10.1016/j.dib.2025.111398" target="_blank" rel="noopener noreferrer" class="project-case-link">
+                <span>Read Dataset Paper</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
           </div>
 
-          <!-- Project 6: Online E-Ticket Reservation System -->
-          <div class="project-card" data-category="fullstack">
+          <!-- Project 6 -->
+          <div class="editorial-project-card">
             <div>
-              <div class="project-top-meta">
-                <span class="project-category-tag"><i class="fa-solid fa-ticket"></i> Web Application</span>
-                <div class="project-links">
-                  <a href="https://github.com/Aritra232" target="_blank" class="project-icon-link" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
-                </div>
+              <div class="project-meta-top">
+                <span class="project-cat-mono">SYSTEMS &amp; BACKEND</span>
+                <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">2024</span>
               </div>
-              <h3 class="project-title">Online E-Ticket Reservation & PDF Generator</h3>
-              <p class="project-desc">
-                Full-featured ticketing portal allowing passenger interactive seat selection, transactional reservation, and automated encrypted PDF ticket generation.
+              <h3 class="project-card-h3">E-Ticket Reservation &amp; PDF Engine</h3>
+              <p class="project-card-p">
+                Full-stack transactional ticketing portal engineered with Django, featuring transactional seat concurrency locks, passenger validation, and automated PDF invoice generation.
               </p>
-              <ul class="project-highlights-list">
-                <li><i class="fa-solid fa-arrow-right"></i> Responsive frontend with dynamic seat grid map.</li>
-                <li><i class="fa-solid fa-arrow-right"></i> Django backend handling ACID-compliant seat locks and automated PDF invoice generation.</li>
-              </ul>
             </div>
-            <div class="project-tags">
-              <span class="tech-tag">Django</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">HTML/CSS</span>
-              <span class="tech-tag">PDF Generation</span>
+            <div>
+              <div class="project-tags-strip">
+                <span class="tech-mini-pill">Django</span>
+                <span class="tech-mini-pill">Python</span>
+                <span class="tech-mini-pill">JavaScript</span>
+                <span class="tech-mini-pill">PDF Generator</span>
+              </div>
+              <a href="https://github.com/Aritra232" target="_blank" rel="noopener noreferrer" class="project-case-link">
+                <span>View on GitHub</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
           </div>
 
         </div>
+
       </div>
     </section>
 
     <!-- ==========================================================================
-         TECHNICAL SKILLS MATRIX
-         ========================================================================== -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag"><i class="fa-solid fa-bolt"></i> Tech Stack</div>
-          <h2 class="section-title">Technical <span class="gradient-text">Skills & Arsenal</span></h2>
-          <p class="section-subtitle">
-            Tools, frameworks, and methodologies honed through academic research and industry engineering.
-          </p>
-        </div>
-
-        <div class="skills-grid">
-          
-          <!-- Skill Card 1: Machine Learning & Deep Learning -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon"><i class="fa-solid fa-brain"></i></div>
-              <h3 class="skill-cat-title">Machine Learning & DL</h3>
-            </div>
-            <div class="skill-pills-wrap">
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Machine Learning</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Deep Learning</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Self-Supervised Learning</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Graph Neural Networks (GCN)</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Contrastive Learning</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Benchmark Dataset Creation</span>
-            </div>
-          </div>
-
-          <!-- Skill Card 2: NLP & Large Language Models -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon"><i class="fa-solid fa-comments"></i></div>
-              <h3 class="skill-cat-title">NLP, LLMs & GenAI</h3>
-            </div>
-            <div class="skill-pills-wrap">
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Large Language Models (LLM)</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> RAG Pipelines</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> LLaMA-2 Fine-Tuning</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> LangChain</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Natural Language Processing</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Prompt Engineering</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Sentiment & Emotion Analysis</span>
-            </div>
-          </div>
-
-          <!-- Skill Card 3: Computer Vision -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon"><i class="fa-solid fa-eye"></i></div>
-              <h3 class="skill-cat-title">Computer Vision</h3>
-            </div>
-            <div class="skill-pills-wrap">
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Computer Vision</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> YOLO (v5/v8) Detection</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Vision Transformers (Swin)</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Masked Autoencoders (MAE)</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Hikvision CCTV Integration</span>
-              <span class="skill-pill"><i class="fa-solid fa-check"></i> Data Annotation</span>
-            </div>
-          </div>
-
-          <!-- Skill Card 4: Programming Languages -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon"><i class="fa-solid fa-code"></i></div>
-              <h3 class="skill-cat-title">Programming Languages</h3>
-            </div>
-            <div class="skill-pills-wrap">
-              <span class="skill-pill"><i class="fa-brands fa-python"></i> Python (Expert)</span>
-              <span class="skill-pill"><i class="fa-solid fa-c"></i> C / C++</span>
-              <span class="skill-pill"><i class="fa-solid fa-database"></i> SQL</span>
-              <span class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
-              <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
-              <span class="skill-pill"><i class="fa-solid fa-code"></i> XML</span>
-            </div>
-          </div>
-
-          <!-- Skill Card 5: Frameworks & Libraries -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon"><i class="fa-solid fa-cubes"></i></div>
-              <h3 class="skill-cat-title">Frameworks & Libraries</h3>
-            </div>
-            <div class="skill-pills-wrap">
-              <span class="skill-pill"><i class="fa-solid fa-fire"></i> PyTorch</span>
-              <span class="skill-pill"><i class="fa-solid fa-microchip"></i> TensorFlow</span>
-              <span class="skill-pill"><i class="fa-solid fa-bolt"></i> FastAPI</span>
-              <span class="skill-pill"><i class="fa-solid fa-layer-group"></i> Django</span>
-              <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> Pandas & NumPy</span>
-              <span class="skill-pill"><i class="fa-solid fa-chart-pie"></i> Matplotlib / Seaborn</span>
-            </div>
-          </div>
-
-          <!-- Skill Card 6: Data & Infrastructure -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon"><i class="fa-solid fa-server"></i></div>
-              <h3 class="skill-cat-title">Data & Infrastructure</h3>
-            </div>
-            <div class="skill-pills-wrap">
-              <span class="skill-pill"><i class="fa-solid fa-vector-square"></i> Pinecone Vector DB</span>
-              <span class="skill-pill"><i class="fa-solid fa-database"></i> MongoDB</span>
-              <span class="skill-pill"><i class="fa-solid fa-database"></i> SQL Databases</span>
-              <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
-              <span class="skill-pill"><i class="fa-solid fa-water"></i> Lakehouse ETL</span>
-              <span class="skill-pill"><i class="fa-solid fa-cloud"></i> Vercel Deployment</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         EXPERIENCE & EDUCATION DUAL TIMELINE
+         TRAJECTORY / EXPERIENCE SECTION (MINIMALIST TIMELINE)
          ========================================================================== -->
     <section class="section" id="experience">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag"><i class="fa-solid fa-briefcase"></i> Trajectory</div>
-          <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
-          <p class="section-subtitle">
-            Chronological engineering roles in industry and academic mentorship at university laboratories.
-          </p>
-        </div>
+        
+        <div class="section-label">// TRAJECTORY</div>
+        <h2 class="section-editorial-h2">Experience &amp; Appointments.</h2>
+        <p class="section-editorial-p">
+          Professional roles in applied AI engineering and university research mentorship.
+        </p>
 
-        <div class="timeline-wrapper">
+        <div class="experience-list">
           
-          <!-- Industry Column -->
-          <div>
-            <h3 class="timeline-column-title">
-              <i class="fa-solid fa-laptop-code gradient-text"></i> Industry Engineering
-            </h3>
-            
-            <div class="timeline-items">
-              
-              <!-- Role 1: SM Technology -->
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-card">
-                  <div class="timeline-period">April 2026 – Present</div>
-                  <h4 class="timeline-role">AI Developer</h4>
-                  <div class="timeline-company"><i class="fa-regular fa-building"></i> SM Technology, Dhaka, Bangladesh</div>
-                  <ul class="timeline-desc">
-                    <li>Develop and deploy enterprise AI solutions, including Large Language Model applications and RAG pipelines.</li>
-                    <li>End-to-end management spanning rapid prototype verification to robust production rollout.</li>
-                    <li>Optimize vector retrieval latency and multi-tenant conversational prompt pipelines.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Role 2: ACME AI -->
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-card">
-                  <div class="timeline-period">June 2024 – September 2024</div>
-                  <h4 class="timeline-role">Machine Learning Engineer</h4>
-                  <div class="timeline-company"><i class="fa-regular fa-building"></i> ACME AI, Dhaka, Bangladesh</div>
-                  <ul class="timeline-desc">
-                    <li>Built and evaluated production-ready machine learning models across multiple business verticals.</li>
-                    <li>Managed data annotation protocols, model training workflows, and empirical performance benchmarking.</li>
-                    <li>Implemented automated regression checks for model inference consistency.</li>
-                  </ul>
-                </div>
-              </div>
-
+          <!-- Role 1: SM Technology -->
+          <div class="exp-editorial-item">
+            <div class="exp-left-col">
+              <span class="exp-timeframe">April 2026 – Present</span>
+              <span class="exp-company">SM Technology</span>
+              <span class="exp-location">Dhaka, Bangladesh</span>
+            </div>
+            <div class="exp-right-col">
+              <h4>AI Developer</h4>
+              <ul class="exp-bullet-list">
+                <li>Architect and deploy production-grade Large Language Model applications and Retrieval-Augmented Generation (RAG) pipelines for enterprise clients.</li>
+                <li>Oversee complete project lifecycles from rapid prototype verification to stable production deployments.</li>
+                <li>Optimize vector database indexing, token economics, and semantic similarity search latency.</li>
+              </ul>
             </div>
           </div>
 
-          <!-- Academic Appointments Column -->
-          <div>
-            <h3 class="timeline-column-title">
-              <i class="fa-solid fa-chalkboard-user gradient-text"></i> Academic Appointments
-            </h3>
-            
-            <div class="timeline-items">
-              
-              <!-- Role 1: Teaching Assistant -->
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-card">
-                  <div class="timeline-period">January 2024 – December 2025</div>
-                  <h4 class="timeline-role">Teaching Assistant</h4>
-                  <div class="timeline-company"><i class="fa-solid fa-graduation-cap"></i> East West University, Dhaka, Bangladesh</div>
-                  <ul class="timeline-desc">
-                    <li>Assisted with laboratory instruction, assignment evaluation, and student consultation for Computer Science and Engineering courses.</li>
-                    <li>Mentored undergraduate students in machine learning projects, programming paradigms, and algorithmic problem solving.</li>
-                  </ul>
-                </div>
-              </div>
+          <!-- Role 2: ACME AI -->
+          <div class="exp-editorial-item">
+            <div class="exp-left-col">
+              <span class="exp-timeframe">June 2024 – September 2024</span>
+              <span class="exp-company">ACME AI</span>
+              <span class="exp-location">Dhaka, Bangladesh</span>
+            </div>
+            <div class="exp-right-col">
+              <h4>Machine Learning Engineer</h4>
+              <ul class="exp-bullet-list">
+                <li>Developed and evaluated production machine learning models across diverse industry applications.</li>
+                <li>Supervised data annotation pipelines and established rigorous baseline benchmarking metrics.</li>
+                <li>Engineered testing workflows to ensure algorithmic reliability and prevent data drift.</li>
+              </ul>
+            </div>
+          </div>
 
-              <!-- Role 2: Research Mentorship -->
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-card">
-                  <div class="timeline-period">2024 – 2025</div>
-                  <h4 class="timeline-role">Research Collaboration & Lab Mentorship</h4>
-                  <div class="timeline-company"><i class="fa-solid fa-flask-vial"></i> East West University, Dhaka, Bangladesh</div>
-                  <ul class="timeline-desc">
-                    <li>Co-authored multiple international journal and conference papers in vision and NLP.</li>
-                    <li>Guided research junior colleagues on experimental setups, baseline comparisons, and dataset annotation pipelines.</li>
-                  </ul>
-                </div>
-              </div>
-
+          <!-- Role 3: East West University -->
+          <div class="exp-editorial-item">
+            <div class="exp-left-col">
+              <span class="exp-timeframe">January 2024 – December 2025</span>
+              <span class="exp-company">East West University</span>
+              <span class="exp-location">Dhaka, Bangladesh</span>
+            </div>
+            <div class="exp-right-col">
+              <h4>Teaching Assistant &amp; Research Mentor</h4>
+              <ul class="exp-bullet-list">
+                <li>Assisted faculty with laboratory sessions, grading, and curriculum consultation for core CSE courses.</li>
+                <li>Mentored undergraduate cohorts in machine learning methodologies, computer vision concepts, and Python programming.</li>
+                <li>Co-authored multiple international journal and conference publications with faculty supervisors.</li>
+              </ul>
             </div>
           </div>
 
         </div>
+
       </div>
     </section>
 
     <!-- ==========================================================================
-         AWARDS, WORKSHOPS & REFERENCES
+         DISTINCTION & ACADEMIC REFERENCES
          ========================================================================== -->
     <section class="section" id="awards">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag"><i class="fa-solid fa-award"></i> Recognition</div>
-          <h2 class="section-title">Honors & <span class="gradient-text">Academic References</span></h2>
-          <p class="section-subtitle">
-            International recognition for academic excellence, professional development, and scholarly mentorship.
-          </p>
+        
+        <div class="section-label">// DISTINCTION</div>
+        <h2 class="section-editorial-h2">Recognition &amp; References.</h2>
+
+        <!-- Best Paper Award Feature Block -->
+        <div class="quote-editorial-block">
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-amber); margin-bottom: 0.75rem;">
+            ★ BEST PAPER AWARD WINNER — AII 2025 (WASHINGTON D.C., USA)
+          </div>
+          <div class="quote-editorial-text">
+            “CodeMixEcom-Emotion: A Large-Scale Bangla-English Review Corpus and Transformer-Based Benchmark for Fine-Grained Emotion Detection”
+          </div>
+          <div class="quote-author-row">
+            <div class="quote-author-info">
+              <span class="quote-author-name">5th International Conference on Applied Intelligence and Informatics</span>
+              <span class="quote-author-sub">Recognized for pioneering dataset construction and transformer benchmark engineering for low-resource bilingual NLP.</span>
+            </div>
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-emerald); font-weight: 600;">
+              Washington, D.C.
+            </span>
+          </div>
         </div>
 
-        <div class="extras-grid">
+        <!-- Academic References Grid -->
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.75rem; margin-top: 2rem;">
           
-          <!-- Award Spotlight Card -->
-          <div class="award-spotlight-card">
-            <i class="fa-solid fa-trophy award-trophy-watermark"></i>
-            <div class="award-badge-ribbon">
-              <i class="fa-solid fa-medal"></i> International Distinction
-            </div>
-            <h3 class="award-name">Best Paper Award</h3>
-            <p style="color: var(--text-secondary); margin-bottom: 0.8rem; font-size: 0.95rem;">
-              5th International Conference on Applied Intelligence and Informatics (AII 2025), Washington, D.C., USA
-            </p>
-            <div class="award-paper-title">
-              "CodeMixEcom-Emotion: A Large-Scale Bangla-English Review Corpus and Transformer-Based Benchmark for Fine-Grained Emotion Detection"
-            </div>
-            <p class="award-venue">
-              Recognized among hundreds of global submissions for excellence in dataset construction and benchmark transformer modeling for low-resource bilingual NLP.
-            </p>
-
-            <div style="margin-top: 1.8rem; padding-top: 1.4rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
-              <div style="font-size: 0.85rem; font-family: var(--font-mono); color: var(--accent-secondary); margin-bottom: 0.4rem;">
-                <i class="fa-solid fa-certificate"></i> Professional Development
+          <div class="edu-editorial-card">
+            <div>
+              <div class="edu-card-top">
+                <span class="edu-year-label">ACADEMIC SUPERVISOR</span>
+                <span class="edu-pill">East West University</span>
               </div>
-              <div style="font-weight: 600; font-size: 0.95rem;">Workshop on Cutting-Edge Technology: Opportunities & Future Skillsets</div>
-              <div style="font-size: 0.85rem; color: var(--text-secondary);">Bangladesh Computer Council (BCC), BKIICT</div>
+              <h3 class="edu-card-degree" style="font-size: 1.2rem;">Dr. Mohammad Rifat Ahmmad Rashid</h3>
+              <div class="edu-card-inst">Associate Professor, Department of CSE</div>
+              <p class="edu-card-desc">
+                Co-author and research mentor across multiple Q1 Elsevier publications and computer vision benchmarking studies.
+              </p>
             </div>
-          </div>
-
-          <!-- Academic References Card -->
-          <div class="references-card">
-            <h3 style="font-size: 1.3rem; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.6rem;">
-              <i class="fa-solid fa-users-gear gradient-text"></i> Academic References
-            </h3>
-
-            <!-- Reference 1 -->
-            <div class="ref-item">
-              <div class="ref-name">Dr. Mohammad Rifat Ahmmad Rashid</div>
-              <div class="ref-title">Associate Professor, Department of Computer Science & Engineering</div>
-              <div class="ref-title">East West University, Dhaka, Bangladesh</div>
-              <a href="mailto:rifat.rashid@ewubd.edu" class="ref-email">
+            <div style="padding-top: 1rem; border-top: 1px solid var(--border-divider);">
+              <a href="mailto:rifat.rashid@ewubd.edu" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-emerald);">
                 <i class="fa-regular fa-envelope"></i> rifat.rashid@ewubd.edu
               </a>
             </div>
+          </div>
 
-            <!-- Reference 2 -->
-            <div class="ref-item">
-              <div class="ref-name">Dr. Maheen Islam</div>
-              <div class="ref-title">Chairperson and Associate Professor, Department of CSE</div>
-              <div class="ref-title">East West University, Dhaka, Bangladesh</div>
-              <a href="mailto:maheen@ewubd.edu" class="ref-email">
+          <div class="edu-editorial-card">
+            <div>
+              <div class="edu-card-top">
+                <span class="edu-year-label">DEPARTMENT CHAIR</span>
+                <span class="edu-pill">East West University</span>
+              </div>
+              <h3 class="edu-card-degree" style="font-size: 1.2rem;">Dr. Maheen Islam</h3>
+              <div class="edu-card-inst">Chairperson &amp; Associate Professor, Department of CSE</div>
+              <p class="edu-card-desc">
+                Departmental advisor supporting academic excellence, research initiatives, and academic mentorship.
+              </p>
+            </div>
+            <div style="padding-top: 1rem; border-top: 1px solid var(--border-divider);">
+              <a href="mailto:maheen@ewubd.edu" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-emerald);">
                 <i class="fa-regular fa-envelope"></i> maheen@ewubd.edu
               </a>
-            </div>
-
-            <!-- Languages Spoken -->
-            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
-              <div style="font-size: 0.85rem; font-family: var(--font-mono); color: var(--text-muted); margin-bottom: 0.5rem;">
-                LANGUAGES PROFICIENCY
-              </div>
-              <div style="display: flex; gap: 0.8rem;">
-                <span class="skill-pill"><i class="fa-solid fa-language"></i> Bangla (Native)</span>
-                <span class="skill-pill"><i class="fa-solid fa-language"></i> English (Professional)</span>
-              </div>
             </div>
           </div>
 
         </div>
+
       </div>
     </section>
 
     <!-- ==========================================================================
-         CONTACT & GET IN TOUCH
+         CONTACT SECTION ("START A CONVERSATION" - DIRECT NOTE)
          ========================================================================== -->
-    <section class="section" id="contact">
+    <section class="section" id="contact" style="border-bottom: none;">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag"><i class="fa-regular fa-paper-plane"></i> Get in Touch</div>
-          <h2 class="section-title">Let's Build Something <span class="gradient-text">Extraordinary</span></h2>
-          <p class="section-subtitle">
-            Whether you want to discuss AI research collaboration, hire for machine learning roles, or consult on LLM & RAG architectures—my inbox is always open.
-          </p>
-        </div>
+        
+        <div class="section-label">// GET IN TOUCH</div>
+        <h2 class="section-editorial-h2">Start a conversation.</h2>
+        <p class="section-editorial-p">
+          Whether you want to discuss research collaboration, technical opportunities, or engineering consultation—reach out directly.
+        </p>
 
-        <div class="contact-grid">
+        <div class="contact-editorial-grid">
           
-          <!-- Contact Info Card -->
-          <div class="contact-info-card">
-            <h3 class="contact-info-title">Contact Information</h3>
-            <p class="contact-info-subtitle">
-              Feel free to reach out directly via email, phone, or connect on LinkedIn and GitHub.
-            </p>
-
-            <div class="contact-items">
-              
-              <!-- Email -->
-              <div class="contact-item">
-                <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
-                <div>
-                  <div class="contact-item-title">Email Address</div>
-                  <div class="contact-item-val">
-                    <span>aritrad768@gmail.com</span>
-                    <button class="copy-mini-btn" id="copy-email-btn" title="Copy Email"><i class="fa-regular fa-copy"></i></button>
-                  </div>
+          <!-- Left: Direct Channels Card -->
+          <div class="contact-direct-card">
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 1.25rem;">Direct Channels</h3>
+            
+            <div class="contact-card-item">
+              <div class="contact-icon-mini"><i class="fa-regular fa-envelope"></i></div>
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">Email Address</div>
+                <div style="font-weight: 600; display: flex; align-items: center; gap: 0.5rem; margin-top: 0.2rem;">
+                  <span>aritrad768@gmail.com</span>
+                  <button class="social-pill-btn" style="width: 28px; height: 28px; font-size: 0.75rem;" id="copy-email-btn" title="Copy Email">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
                 </div>
               </div>
-
-              <!-- Phone -->
-              <div class="contact-item">
-                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-                <div>
-                  <div class="contact-item-title">Phone / WhatsApp</div>
-                  <div class="contact-item-val">
-                    <span>+880 1812985691</span>
-                    <button class="copy-mini-btn" id="copy-phone-btn" title="Copy Phone"><i class="fa-regular fa-copy"></i></button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Location -->
-              <div class="contact-item">
-                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-                <div>
-                  <div class="contact-item-title">Location</div>
-                  <div class="contact-item-val">Dhaka, Bangladesh (UTC+6)</div>
-                </div>
-              </div>
-
             </div>
 
-            <!-- CV Download reminder in contact card -->
-            <div style="padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+            <div class="contact-card-item">
+              <div class="contact-icon-mini"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">Phone / WhatsApp</div>
+                <div style="font-weight: 600; display: flex; align-items: center; gap: 0.5rem; margin-top: 0.2rem;">
+                  <span>+880 1812985691</span>
+                  <button class="social-pill-btn" style="width: 28px; height: 28px; font-size: 0.75rem;" id="copy-phone-btn" title="Copy Phone">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-icon-mini"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">Current Location</div>
+                <div style="font-weight: 600; margin-top: 0.2rem;">Dhaka, Bangladesh (UTC+6)</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid var(--border-divider);">
               <a href="assets/docs/Aritra_Das_CV.pdf" download="Aritra_Das_CV.pdf" class="btn btn-secondary" style="width: 100%;">
-                <i class="fa-solid fa-file-pdf"></i>
-                <span>Download Complete ATS Resume</span>
+                <i class="fa-solid fa-arrow-down-to-bracket"></i>
+                <span>Download Curriculum Vitae (PDF)</span>
               </a>
             </div>
+
           </div>
 
-          <!-- Contact Direct Message Box -->
-          <div class="contact-form-card">
-            <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.6rem;">
-              <i class="fa-solid fa-paper-plane gradient-text"></i> Quick Direct Message
-            </h3>
-            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
-              Write your note below — it will be delivered directly to <strong>aritrad768@gmail.com</strong>.
+          <!-- Right: Direct Message Box (No heavy form, just From & Message) -->
+          <div class="contact-form-editorial">
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 0.4rem;">Send a direct note</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              Drop a quick note below. It will open directly in your mail composer sent to <strong>aritrad768@gmail.com</strong>.
             </p>
-            
+
             <form id="contact-form">
-              <div class="form-group">
-                <label for="form-from" class="form-label">From</label>
-                <input type="text" id="form-from" class="form-input" placeholder="Your Name or Email (e.g. alex@mit.edu)" required>
+              <div class="form-group-editorial">
+                <label for="form-from" class="form-label-editorial">From (Your Name or Email)</label>
+                <input type="text" id="form-from" class="form-input-editorial" placeholder="e.g. Professor Smith / alex@mit.edu" required>
               </div>
 
-              <div class="form-group">
-                <label for="form-message" class="form-label">Message</label>
-                <textarea id="form-message" class="form-textarea" placeholder="Write your message here..." rows="6" required></textarea>
+              <div class="form-group-editorial">
+                <label for="form-message" class="form-label-editorial">Message</label>
+                <textarea id="form-message" class="form-textarea-editorial" placeholder="Write your message here..." rows="5" required></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary" id="btn-send-message" style="width: 100%;">
-                <i class="fa-solid fa-paper-plane"></i>
-                <span id="btn-send-text">Send to Aritra's Mail</span>
+              <button type="submit" class="btn btn-primary" id="btn-send-message" style="width: 100%; padding: 0.85rem;">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span id="btn-send-text">Send Direct Note</span>
               </button>
 
-              <div class="form-status" id="form-status"></div>
+              <div id="form-status" style="display: none; margin-top: 1rem; font-size: 0.85rem; padding: 0.75rem; border-radius: var(--radius-md); background: var(--accent-emerald-soft); color: var(--accent-emerald); border: 1px solid var(--accent-emerald-border);"></div>
             </form>
           </div>
 
         </div>
+
       </div>
     </section>
+
   </main>
 
   <!-- ==========================================================================
-       FOOTER
+       FOOTER (EDITORIAL FAHIM STYLE)
        ========================================================================== -->
-  <footer class="footer">
+  <footer class="footer-editorial">
     <div class="container footer-content">
       <div class="footer-copy">
-        © 2026 <strong>Aritra Das</strong>. Crafted with precision for AI Research & Engineering.
+        © 2026 <strong>Aritra Das</strong> — AI Developer &amp; Computer Science Researcher.
       </div>
-      <div class="hero-socials" style="margin: 0;">
-        <a href="https://scholar.google.com/citations?user=WkuhmCUAAAAJ" target="_blank" class="social-icon-btn scholar" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-        <a href="https://github.com/Aritra232" target="_blank" class="social-icon-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://linkedin.com/in/aritra-das-9a1051225" target="_blank" class="social-icon-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <div style="display: flex; align-items: center; gap: 0.6rem;">
+        <a href="https://scholar.google.com/citations?user=WkuhmCUAAAAJ" target="_blank" rel="noopener noreferrer" class="social-pill-btn" title="Google Scholar">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </a>
+        <a href="https://github.com/Aritra232" target="_blank" rel="noopener noreferrer" class="social-pill-btn" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/aritra-das-9a1051225" target="_blank" rel="noopener noreferrer" class="social-pill-btn" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:aritrad768@gmail.com" class="social-pill-btn" title="Email">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
       </div>
     </div>
   </footer>
 
   <!-- Floating Toast Notification -->
   <div id="toast" class="toast"></div>
-
-  <!-- Back to Top Button -->
-  <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
 
   <!-- Core JavaScript -->
   <script src="assets/js/main.js"></script>
