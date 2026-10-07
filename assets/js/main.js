@@ -169,26 +169,16 @@ function initCitationCopy() {
 }
 
 /* --------------------------------------------------------------------------
-   QUICK COPY (EMAIL & PHONE)
+   QUICK COPY (EMAIL)
    -------------------------------------------------------------------------- */
 function initQuickCopy() {
   const copyEmailBtn = document.getElementById('copy-email-btn');
-  const copyPhoneBtn = document.getElementById('copy-phone-btn');
 
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', (e) => {
       e.preventDefault();
       navigator.clipboard.writeText('aritrad768@gmail.com').then(() => {
         showToast('Email copied: aritrad768@gmail.com');
-      });
-    });
-  }
-
-  if (copyPhoneBtn) {
-    copyPhoneBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      navigator.clipboard.writeText('+8801812985691').then(() => {
-        showToast('Phone number copied: +880 1812985691');
       });
     });
   }
