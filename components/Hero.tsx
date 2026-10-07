@@ -6,20 +6,24 @@ export const Hero: React.FC = () => {
     <section className="hero-editorial" id="hero">
       <div className="container">
         <div className="hero-editorial-grid">
-          {/* Left Column: Editorial Headline & Bio */}
+          {/* Left Column: Editorial Headline, Bio & Stats */}
           <div className="hero-editorial-content">
-            <div className="hero-mono-label">
-              <span>//</span> {profileData.role.toUpperCase()}
+            <div className="hero-status-pill">
+              <span className="live-dot"></span>
+              <span className="hero-status-text">
+                AI Engineer &amp; Computer Science Researcher
+              </span>
             </div>
 
             <h1 className="hero-editorial-h1">
-              Building production AI systems &amp; deep learning{" "}
-              <span className="hero-italic-highlight">research.</span>
+              Engineering <span className="hero-gradient-text">intelligent systems</span> &amp; deep learning research.
             </h1>
 
-            <p className="hero-editorial-bio">{profileData.bio}</p>
+            <p className="hero-editorial-bio">
+              I&apos;m <strong className="text-highlight">{profileData.name}</strong>, an AI Engineer at SM Technology and CS graduate researcher at East West University. I develop production LLM &amp; retrieval pipelines, train self-supervised vision models, and publish empirical ML benchmarks in Elsevier and Nature Q1 journals.
+            </p>
 
-            {/* Vertical Stats Divider */}
+            {/* Impact Metric Counters */}
             <div className="editorial-stats-row">
               <div className="editorial-stat-item">
                 <div className="stat-big-num">{profileData.stats.publications}</div>
@@ -38,28 +42,36 @@ export const Hero: React.FC = () => {
 
               <div className="editorial-stat-item">
                 <div className="stat-big-num">{profileData.stats.degree}</div>
-                <div className="stat-sub-label">{profileData.stats.university}</div>
+                <div className="stat-sub-label">CGPA 3.91 / 4.00</div>
               </div>
             </div>
 
-            {/* Call to Actions */}
+            {/* Actions Row */}
             <div className="hero-actions-group">
-              <a
-                href="/docs/Aritra_Das_CV.pdf"
-                download="Aritra_Das_CV.pdf"
-                className="btn btn-primary"
-                id="hero-download-cv"
-              >
-                <i className="fa-solid fa-arrow-down-to-bracket"></i>
-                <span>Download Resume</span>
-              </a>
-
-              <a href="#publications" className="btn btn-secondary">
-                <span>Read Publications</span>
+              <a href="#publications" className="btn btn-primary" id="hero-read-pubs">
+                <span>View Publications</span>
                 <i className="fa-solid fa-arrow-right"></i>
               </a>
 
-              {/* Mini Social Strip */}
+              <a href="#skills" className="btn btn-secondary">
+                <i className="fa-solid fa-microchip"></i>
+                <span>Technical Arsenal</span>
+              </a>
+
+              <a
+                href="/docs/Aritra_Das_CV.pdf"
+                download="Aritra_Das_CV.pdf"
+                className="btn btn-secondary"
+                id="hero-download-cv"
+              >
+                <i className="fa-solid fa-arrow-down-to-bracket"></i>
+                <span>Resume</span>
+              </a>
+            </div>
+
+            {/* Mini Research Profile Badges */}
+            <div className="hero-scholarly-strip">
+              <span className="scholarly-label">Scholarly Profiles:</span>
               <div className="hero-social-mini-strip">
                 <a
                   href={profileData.scholar}
@@ -99,15 +111,23 @@ export const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Clean Premium Portrait Presentation */}
+          {/* Right Column: Author Portrait Presentation with Status Badge */}
           <div className="hero-portrait-container">
             <div className="portrait-clean-card">
+              <div className="portrait-corner-badge">
+                <span className="live-dot"></span>
+                <span>OPEN TO RESEARCH</span>
+              </div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/aritra_pic.jpeg"
-                alt="Aritra Das — AI Developer &amp; Researcher"
+                alt="Aritra Das — AI Engineer &amp; Computer Science Researcher"
                 className="portrait-clean-img"
               />
+              <div className="portrait-caption-strip">
+                <div className="portrait-caption-name">Aritra Das</div>
+                <div className="portrait-caption-role">AI Engineer · CS Researcher · Dhaka, BD</div>
+              </div>
             </div>
           </div>
         </div>

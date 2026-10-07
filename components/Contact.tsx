@@ -30,28 +30,27 @@ export const Contact: React.FC<ContactProps> = ({ onNotify }) => {
 
     window.location.href = `mailto:${profileData.email}?subject=${subject}&body=${body}`;
     setSentStatus("Mail composer opened! If it didn't open automatically, write to aritrad768@gmail.com.");
-    onNotify("Opening mail composer...");
+    onNotify("Opening mail client...");
   };
 
   return (
     <section className="section" id="contact" style={{ borderBottom: "none" }}>
       <div className="container">
-        <div className="section-label">// GET IN TOUCH</div>
-        <h2 className="section-editorial-h2">Start a conversation.</h2>
-        <p className="section-editorial-p">
-          Feel free to reach out for research collaboration, technical discussions, or consulting opportunities.
+        <div className="section-eyebrow">
+          <span className="eyebrow-dot"></span>
+          INQUIRIES &amp; ACADEMIC COLLABORATION
+        </div>
+        <h2 className="section-title">
+          Start a conversation &amp; <span className="serif-highlight">collaborate.</span>
+        </h2>
+        <p className="section-subtitle">
+          Open to selective research collaborations, peer discussions, and production AI engineering opportunities.
         </p>
 
         <div className="contact-editorial-grid">
           {/* Left: Direct Channels Card */}
           <div className="contact-direct-card">
-            <h3
-              style={{
-                fontFamily: "var(--font-serif)",
-                fontSize: "1.35rem",
-                marginBottom: "1.25rem",
-              }}
-            >
+            <h3 className="contact-card-heading">
               Direct Channels
             </h3>
 
@@ -60,25 +59,10 @@ export const Contact: React.FC<ContactProps> = ({ onNotify }) => {
                 <i className="fa-regular fa-envelope"></i>
               </div>
               <div>
-                <div
-                  style={{
-                    fontFamily: "var(--font-mono)",
-                    fontSize: "0.7rem",
-                    color: "var(--text-muted)",
-                    textTransform: "uppercase",
-                  }}
-                >
-                  Email Address
+                <div className="contact-item-label">
+                  Primary Email
                 </div>
-                <div
-                  style={{
-                    fontWeight: 600,
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "0.5rem",
-                    marginTop: "0.2rem",
-                  }}
-                >
+                <div className="contact-item-val">
                   <span>{profileData.email}</span>
                   <button
                     className="social-pill-btn"
@@ -97,22 +81,15 @@ export const Contact: React.FC<ContactProps> = ({ onNotify }) => {
                 <i className="fa-brands fa-github"></i>
               </div>
               <div>
-                <div
-                  style={{
-                    fontFamily: "var(--font-mono)",
-                    fontSize: "0.7rem",
-                    color: "var(--text-muted)",
-                    textTransform: "uppercase",
-                  }}
-                >
-                  GitHub Repositories
+                <div className="contact-item-label">
+                  GitHub Profile
                 </div>
-                <div style={{ fontWeight: 600, marginTop: "0.2rem" }}>
+                <div className="contact-item-val">
                   <a
                     href={profileData.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: "var(--accent-emerald)" }}
+                    className="contact-profile-link"
                   >
                     github.com/Aritra232
                   </a>
@@ -125,22 +102,15 @@ export const Contact: React.FC<ContactProps> = ({ onNotify }) => {
                 <i className="fa-brands fa-linkedin-in"></i>
               </div>
               <div>
-                <div
-                  style={{
-                    fontFamily: "var(--font-mono)",
-                    fontSize: "0.7rem",
-                    color: "var(--text-muted)",
-                    textTransform: "uppercase",
-                  }}
-                >
-                  LinkedIn Profile
+                <div className="contact-item-label">
+                  LinkedIn Network
                 </div>
-                <div style={{ fontWeight: 600, marginTop: "0.2rem" }}>
+                <div className="contact-item-val">
                   <a
                     href={profileData.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: "var(--accent-emerald)" }}
+                    className="contact-profile-link"
                   >
                     linkedin.com/in/aritra-das
                   </a>
@@ -150,119 +120,83 @@ export const Contact: React.FC<ContactProps> = ({ onNotify }) => {
 
             <div className="contact-card-item">
               <div className="contact-icon-mini">
+                <i className="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div>
+                <div className="contact-item-label">
+                  Google Scholar
+                </div>
+                <div className="contact-item-val">
+                  <a
+                    href={profileData.scholar}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="contact-profile-link"
+                  >
+                    Aritra Das (Citations &amp; Indices)
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="contact-card-item" style={{ borderBottom: "none", paddingBottom: 0 }}>
+              <div className="contact-icon-mini">
                 <i className="fa-solid fa-location-dot"></i>
               </div>
               <div>
-                <div
-                  style={{
-                    fontFamily: "var(--font-mono)",
-                    fontSize: "0.7rem",
-                    color: "var(--text-muted)",
-                    textTransform: "uppercase",
-                  }}
-                >
+                <div className="contact-item-label">
                   Current Location
                 </div>
-                <div style={{ fontWeight: 600, marginTop: "0.2rem" }}>
-                  {profileData.location} (UTC+6)
+                <div className="contact-item-val">
+                  <span>Dhaka, Bangladesh · Open to Global / Remote</span>
                 </div>
               </div>
             </div>
-
-            <div
-              style={{
-                marginTop: "1.75rem",
-                paddingTop: "1.5rem",
-                borderTop: "1px solid var(--border-divider)",
-              }}
-            >
-              <a
-                href="/docs/Aritra_Das_CV.pdf"
-                download="Aritra_Das_CV.pdf"
-                className="btn btn-secondary"
-                style={{ width: "100%" }}
-              >
-                <i className="fa-solid fa-arrow-down-to-bracket"></i>
-                <span>Download Curriculum Vitae (PDF)</span>
-              </a>
-            </div>
           </div>
 
-          {/* Right: Direct Note Message Box */}
-          <div className="contact-form-editorial">
-            <h3
-              style={{
-                fontFamily: "var(--font-serif)",
-                fontSize: "1.35rem",
-                marginBottom: "0.4rem",
-              }}
-            >
-              Send a direct note
+          {/* Right: Clean Inquiry Composer */}
+          <div className="contact-form-card">
+            <h3 className="contact-card-heading">
+              Dispatch an Inquiry
             </h3>
-            <p
-              style={{
-                fontSize: "0.88rem",
-                color: "var(--text-muted)",
-                marginBottom: "1.5rem",
-              }}
-            >
-              Drop a quick note below. It will open directly in your mail composer addressed to{" "}
-              <strong>{profileData.email}</strong>.
-            </p>
 
-            <form onSubmit={handleSubmit}>
-              <div className="form-group-editorial">
-                <label htmlFor="form-from" className="form-label-editorial">
-                  From (Your Name or Email)
+            <form onSubmit={handleSubmit} className="contact-form-inner">
+              <div className="form-group">
+                <label className="form-label" htmlFor="contact-sender">
+                  Your Name or Affiliation
                 </label>
                 <input
                   type="text"
-                  id="form-from"
-                  className="form-input-editorial"
-                  placeholder="e.g. Professor Smith / alex@mit.edu"
+                  id="contact-sender"
+                  className="form-input"
+                  placeholder="e.g. Dr. Jane Doe (University / Lab) or John (Company)"
                   value={fromText}
                   onChange={(e) => setFromText(e.target.value)}
+                />
+              </div>
+
+              <div className="form-group">
+                <label className="form-label" htmlFor="contact-message">
+                  Message / Collaboration Proposal *
+                </label>
+                <textarea
+                  id="contact-message"
+                  className="form-textarea"
+                  rows={5}
+                  placeholder="Briefly describe your research idea, engineering inquiry, or proposal..."
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   required
                 />
               </div>
 
-              <div className="form-group-editorial">
-                <label htmlFor="form-message" className="form-label-editorial">
-                  Message
-                </label>
-                <textarea
-                  id="form-message"
-                  className="form-textarea-editorial"
-                  placeholder="Write your message here..."
-                  rows={5}
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  required
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="btn btn-primary"
-                id="btn-send-message"
-                style={{ width: "100%", padding: "0.85rem" }}
-              >
+              <button type="submit" className="btn btn-primary" style={{ width: "100%", justifyContent: "center" }}>
                 <i className="fa-regular fa-paper-plane"></i>
-                <span>Send Direct Note</span>
+                <span>Open in Mail Client</span>
               </button>
 
               {sentStatus && (
-                <div
-                  style={{
-                    marginTop: "1rem",
-                    fontSize: "0.85rem",
-                    padding: "0.75rem",
-                    borderRadius: "var(--radius-md)",
-                    background: "var(--accent-emerald-soft)",
-                    color: "var(--accent-emerald)",
-                    border: "1px solid var(--accent-emerald-border)",
-                  }}
-                >
+                <div className="contact-status-box">
                   {sentStatus}
                 </div>
               )}

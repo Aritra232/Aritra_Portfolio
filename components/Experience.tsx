@@ -5,10 +5,15 @@ export const Experience: React.FC = () => {
   return (
     <section className="section" id="experience">
       <div className="container">
-        <div className="section-label">// EXPERIENCE</div>
-        <h2 className="section-editorial-h2">Work Experience.</h2>
-        <p className="section-editorial-p">
-          My roles in applied AI engineering and university teaching.
+        <div className="section-eyebrow">
+          <span className="eyebrow-dot"></span>
+          PROFESSIONAL TRAJECTORY
+        </div>
+        <h2 className="section-title">
+          Engineering &amp; <span className="serif-highlight">teaching appointments.</span>
+        </h2>
+        <p className="section-subtitle">
+          Applied engineering roles in the AI industry alongside undergraduate laboratory instruction.
         </p>
 
         <div className="experience-list">

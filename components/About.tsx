@@ -8,16 +8,20 @@ export const About: React.FC = () => {
         <div className="practice-grid">
           {/* Left: Narrative */}
           <div>
-            <div className="section-label">// ABOUT</div>
-            <h2 className="section-editorial-h2">What I focus on.</h2>
-            <p className="section-editorial-p" style={{ marginBottom: "1.5rem" }}>
-              I divide my work between shipping practical AI backends in industry and conducting computer vision research in academia.
+            <div className="section-eyebrow">
+              <span className="eyebrow-dot"></span>
+              CORE FOCUS &amp; ACADEMIC INQUIRY
+            </div>
+            <h2 className="section-title">
+              Bridging theory &amp; <span className="serif-highlight">real-world systems.</span>
+            </h2>
+            <p className="section-subtitle" style={{ marginBottom: "1.5rem" }}>
+              I divide my work between engineering resilient machine learning services in industry and conducting empirical computer vision research in academia.
             </p>
             <p
-              className="section-editorial-p"
-              style={{ fontSize: "0.95rem", color: "var(--text-muted)" }}
+              className="about-secondary-text"
             >
-              Currently, I engineer production LLM and RAG systems at SM Technology, while researching self-supervised visual representations and graph neural networks for my MSc degree.
+              Currently, I design LLM and RAG retrieval pipelines at SM Technology, while researching contrastive self-supervised representations and Graph Convolutional Networks (GCN) for my MSc thesis at East West University.
             </p>
             <div style={{ marginTop: "2rem" }}>
               <a href="#contact" className="btn btn-secondary">
@@ -27,13 +31,15 @@ export const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Right: Focus Areas List */}
+          {/* Right: 4 Focus Areas */}
           <div className="threads-list">
             {profileData.focusAreas.map((area) => (
               <div className="thread-row" key={area.number}>
                 <span className="thread-num">{area.number}</span>
-                <div className="thread-title">{area.title}</div>
-                <div className="thread-desc">{area.description}</div>
+                <div>
+                  <div className="thread-title">{area.title}</div>
+                  <div className="thread-desc">{area.description}</div>
+                </div>
               </div>
             ))}
           </div>

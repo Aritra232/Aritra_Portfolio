@@ -29,10 +29,15 @@ export const Publications: React.FC<PublicationsProps> = ({ onNotify }) => {
   return (
     <section className="section" id="publications">
       <div className="container">
-        <div className="section-label">// SCHOLARLY WORK</div>
-        <h2 className="section-editorial-h2">Peer-Reviewed Publications.</h2>
-        <p className="section-editorial-p">
-          11 peer-reviewed papers published in international journals and conferences, including 6 in Elsevier and Nature Q1 journals.
+        <div className="section-eyebrow">
+          <span className="eyebrow-dot"></span>
+          SCHOLARLY WORK &amp; PEER-REVIEWED RESEARCH
+        </div>
+        <h2 className="section-title">
+          Published papers &amp; <span className="serif-highlight">scientific rigor.</span>
+        </h2>
+        <p className="section-subtitle">
+          11 peer-reviewed papers spanning transformer architectures, contrastive self-supervised representations, and open benchmarks — including 6 Q1 papers in Elsevier and Nature journals.
         </p>
 
         {/* Filter Tabs */}
@@ -41,33 +46,34 @@ export const Publications: React.FC<PublicationsProps> = ({ onNotify }) => {
             className={`pub-pill-tab ${filter === "all" ? "active" : ""}`}
             onClick={() => setFilter("all")}
           >
-            All Works ({publicationsData.length})
+            All Papers ({publicationsData.length})
           </button>
           <button
             className={`pub-pill-tab ${filter === "q1" ? "active" : ""}`}
             onClick={() => setFilter("q1")}
           >
-            Q1 Journals (6)
+            Elsevier &amp; Nature Q1 (6)
           </button>
           <button
             className={`pub-pill-tab ${filter === "conference" ? "active" : ""}`}
             onClick={() => setFilter("conference")}
           >
-            Conference Papers (5)
+            IEEE Conferences (5)
           </button>
           <button
             className={`pub-pill-tab ${filter === "award" ? "active" : ""}`}
             onClick={() => setFilter("award")}
           >
-            Best Paper Award (1)
+            ★ Best Paper Award (1)
           </button>
         </div>
 
         {/* Publications List */}
         <div className="editorial-pub-list">
-          {filteredPublications.map((pub) => (
+          {filteredPublications.map((pub, idx) => (
             <PublicationCard
               key={pub.id}
+              index={idx}
               publication={pub}
               onCopyCitation={handleCopyCitation}
             />

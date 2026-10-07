@@ -5,10 +5,15 @@ export const Education: React.FC = () => {
   return (
     <section className="section" id="education">
       <div className="container">
-        <div className="section-label">// ACADEMIC BACKGROUND</div>
-        <h2 className="section-editorial-h2">Educational Background.</h2>
-        <p className="section-editorial-p">
-          My academic coursework and research track at East West University, Dhaka.
+        <div className="section-eyebrow">
+          <span className="eyebrow-dot"></span>
+          ACADEMIC FOUNDATION &amp; DEGREES
+        </div>
+        <h2 className="section-title">
+          Educational background &amp; <span className="serif-highlight">scholarship.</span>
+        </h2>
+        <p className="section-subtitle">
+          Graduate and undergraduate computer science coursework and research track at East West University, Dhaka.
         </p>
 
         <div className="education-editorial-grid">

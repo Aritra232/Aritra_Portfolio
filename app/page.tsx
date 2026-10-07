@@ -4,9 +4,10 @@ import React, { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
-import { Education } from "@/components/Education";
+import { Skills } from "@/components/Skills";
 import { Publications } from "@/components/Publications";
 import { Projects } from "@/components/Projects";
+import { Education } from "@/components/Education";
 import { Experience } from "@/components/Experience";
 import { Recognition } from "@/components/Recognition";
 import { Contact } from "@/components/Contact";
@@ -29,9 +30,10 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <Education />
+        <Skills />
         <Publications onNotify={showToast} />
         <Projects />
+        <Education />
         <Experience />
         <Recognition />
         <Contact onNotify={showToast} />
