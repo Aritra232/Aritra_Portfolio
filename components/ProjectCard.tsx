@@ -15,7 +15,21 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <span className="project-cat-mono">{project.category}</span>
           <span className="project-badge-pill">{project.badge}</span>
         </div>
-        <h3 className="project-card-h3">{project.title}</h3>
+        <h3 className="project-card-h3">
+          {project.linkUrl ? (
+            <a
+              href={project.linkUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-title-link"
+            >
+              {project.title}
+              <span className="project-title-arrow">↗</span>
+            </a>
+          ) : (
+            project.title
+          )}
+        </h3>
         <p className="project-card-p">{project.description}</p>
       </div>
 
@@ -28,19 +42,22 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           ))}
         </div>
 
-        <div className="project-action-strip">
-          <a
-            href={project.linkUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-link-btn"
-          >
-            <i className={isGithub ? "fa-brands fa-github" : "fa-solid fa-arrow-up-right-from-square"}></i>
-            <span>{project.linkLabel}</span>
-            <i className="fa-solid fa-arrow-right project-link-arrow"></i>
-          </a>
-        </div>
+        {project.linkUrl && (
+          <div className="project-action-strip">
+            <a
+              href={project.linkUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-text-link"
+            >
+              <i className={isGithub ? "fa-brands fa-github" : "fa-solid fa-arrow-up-right-from-square"}></i>
+              <span>{project.linkLabel}</span>
+              <span className="project-arrow-icon">↗</span>
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
 };
+
