@@ -7,44 +7,61 @@ export interface Project {
   tags: string[];
   linkUrl: string;
   linkLabel: string;
+  filterCategory: "production" | "vision" | "nlp" | "automation";
   isPrivate?: boolean;
 }
 
 export const projectsData: Project[] = [
   {
-    id: "bengali-asr",
-    category: "SPEECH FOUNDATION MODELS & NLP",
-    badge: "EACL RESEARCH • XLSR-53",
-    title: "Transliteration-Based Zero-Shot Bengali ASR",
+    id: "r-raoclinical",
+    category: "CAREER AI & VECTOR MATCHING",
+    badge: "FASTAPI • QDRANT • MONGODB",
+    title: "Skill & Clinical Career AI Intelligence Platform",
     description:
-      "Investigated cross-lingual speech representation transfer by fine-tuning Wav2Vec2 and XLS-R (300M / XLSR-53) speech foundation models on FLEURS data. Evaluated zero-shot transliteration transfer across standard Bengali and regional Chittagonian dialects for EACL submission.",
-    tags: ["Wav2Vec2", "XLS-R 300M", "Zero-Shot ASR", "Bengali Dialects", "PyTorch"],
-    linkUrl: "https://github.com/Aritra232/Bengali-ASR",
-    linkLabel: "GitHub Repository",
+      "Production-grade semantic talent matching platform using FastAPI, Qdrant Vector DB, and BAAI/bge-base-en-v1.5 embeddings. Features automated PDF/DOCX resume parsing, skill-gap analysis, mentor recommendation, clarity scoring via APScheduler, and Dockerized deployment.",
+    tags: ["FastAPI", "Qdrant Vector DB", "MongoDB", "LangChain", "Docker"],
+    linkUrl: "https://github.com/Betopia24/r_raoclinical-Ai",
+    linkLabel: "GitHub Repo (Private)",
+    filterCategory: "production",
     isPrivate: true,
   },
   {
     id: "skin-diseases",
     category: "MEDICAL COMPUTER VISION & LLMS",
     badge: "FASTAPI • PYTORCH • DOCKER",
-    title: "Skin Lesion Classifier & Clinical LLM Advisor",
+    title: "Skin Disease Detection & Clinical LLM Advisor",
     description:
-      "End-to-end dermatological diagnostics pipeline employing fine-tuned EfficientNet deep backbones for multi-class skin lesion detection, integrated with an interactive LLM medical guidance agent served via asynchronous FastAPI and Dockerized for production deployment.",
-    tags: ["EfficientNet", "PyTorch", "FastAPI", "Docker", "Medical Vision"],
+      "AI-powered dermatological diagnostics system detecting multi-class skin lesions with fine-tuned EfficientNet backbones (PyTorch), integrated with an interactive LLM clinical guidance advisor served via asynchronous FastAPI and Streamlit, fully containerized with Docker.",
+    tags: ["EfficientNet", "PyTorch", "FastAPI", "Docker", "Streamlit"],
     linkUrl: "https://github.com/Aritra232/Skin-Diseases",
     linkLabel: "GitHub Repository",
+    filterCategory: "vision",
     isPrivate: false,
   },
   {
-    id: "google-ai-review",
-    category: "LLM BACKEND & ASYNC API",
-    badge: "FASTAPI • DEEPSEEK • MONGODB",
-    title: "FastAPI Review Intelligence & Personalization Service",
+    id: "social-safety",
+    category: "MULTIMODAL SAFETY & CONTENT MODERATION",
+    badge: "GEMINI AI • FASTAPI • OPENCV",
+    title: "Child Safety Multimodal Content Moderator",
     description:
-      "High-throughput asynchronous backend service combining MongoDB and DeepSeek AI (deepseek-chat) to analyze customer service interactions, synthesize customized review outreach messages, and optimize organic feedback engagement.",
-    tags: ["FastAPI", "DeepSeek AI", "MongoDB", "AsyncIO", "REST API"],
-    linkUrl: "https://github.com/Aritra232/Google_AI_Review",
+      "Automated multimodal moderation service analyzing text, images, and video keyframes for child safety and toxicity compliance using Google's Gemini AI. Features PII blocking, automated quota management, rate-limit retry logic, and local toxicity detection fallback.",
+    tags: ["Gemini AI", "FastAPI", "Computer Vision", "Content Moderation", "NLP"],
+    linkUrl: "https://github.com/Aritra232/Social-Safety",
     linkLabel: "GitHub Repository",
+    filterCategory: "vision",
+    isPrivate: false,
+  },
+  {
+    id: "food-ai",
+    category: "CONVERSATIONAL COMMERCE & LLMS",
+    badge: "FASTAPI • MONGODB • CLAUDE",
+    title: "Food AI: Conversational Ordering Assistant",
+    description:
+      "Personalized conversational food-ordering engine backed by MongoDB as the source of truth for restaurant menus, variations, user preferences, and cart sessions. Uses LLM intent extraction to parse natural-language orders without hallucinating catalog items.",
+    tags: ["FastAPI", "MongoDB", "Streamlit", "Claude LLM", "Intent Extraction"],
+    linkUrl: "https://github.com/Aritra232/Food_AI",
+    linkLabel: "GitHub Repository",
+    filterCategory: "nlp",
     isPrivate: false,
   },
   {
@@ -57,11 +74,25 @@ export const projectsData: Project[] = [
     tags: ["Gemini / Veo", "Generative Video AI", "AWS S3", "FastAPI", "Automation"],
     linkUrl: "https://github.com/Aritra232/AI_Diamond",
     linkLabel: "GitHub Repository",
+    filterCategory: "automation",
+    isPrivate: false,
+  },
+  {
+    id: "ai-trading",
+    category: "FINTECH & ALGORITHMIC TRADING",
+    badge: "FASTAPI • TOPSTEPX API • MONGODB",
+    title: "TopstepX Gateway Algorithmic Trading Service",
+    description:
+      "Asynchronous trading gateway service interfacing with TopstepX / ProjectX APIs. Implements dual-gate live execution safeguards, daily profit-lock logic ($1020 cap), multi-user session token authentication, and full MongoDB audit logging.",
+    tags: ["FastAPI", "TopstepX Gateway", "MongoDB", "Algorithmic Trading", "AsyncIO"],
+    linkUrl: "https://github.com/Aritra232/AI_Trading",
+    linkLabel: "GitHub Repository",
+    filterCategory: "production",
     isPrivate: false,
   },
   {
     id: "bert-kan",
-    category: "NLP & LARGE LANGUAGE MODELS",
+    category: "NLP & LARGE LANGUAGE MODELS (CV)",
     badge: "ELSEVIER Q1 • 2025",
     title: "BERT-KAN Bilingual Sentiment Analysis",
     description:
@@ -69,18 +100,46 @@ export const projectsData: Project[] = [
     tags: ["BERT", "KAN", "LLM Fine-Tuning", "NLP", "PyTorch"],
     linkUrl: "https://doi.org/10.1016/j.nlp.2025.100190",
     linkLabel: "View Publication (DOI)",
+    filterCategory: "nlp",
     isPrivate: false,
   },
   {
     id: "newsletter-curation",
-    category: "CONTENT AUTOMATION & NLP",
+    category: "CONTENT AUTOMATION & NLP (CV)",
     badge: "N8N • BREVO • LLM PIPELINE",
     title: "Multi-Source Newsletter Curation & Dispatch",
     description:
       "Engineered an automated n8n workflow aggregating European SME market news across feeds, translating and summarizing content between German and English using LLMs, formatting an editorial newsletter, and delivering through Brevo.",
     tags: ["n8n Automation", "LLM Translation", "Brevo API", "Content Pipeline"],
     linkUrl: "https://github.com/Aritra232",
-    linkLabel: "GitHub Profile",
+    linkLabel: "Automation Architecture",
+    filterCategory: "automation",
+    isPrivate: false,
+  },
+  {
+    id: "rag-ecommerce",
+    category: "RAG PIPELINES & LLMS (CV)",
+    badge: "FASTAPI • PINECONE",
+    title: "Conversational E-Commerce RAG Assistant",
+    description:
+      "A retrieval-augmented chatbot for e-commerce search, using fine-tuned LLaMA-2 with Pinecone for vector indexing. Built to handle bilingual queries (Bangla and English) with context-aware product recommendations.",
+    tags: ["LLaMA-2", "Pinecone Vector DB", "RAG", "LangChain", "FastAPI"],
+    linkUrl: "https://github.com/Aritra232",
+    linkLabel: "Project Architecture",
+    filterCategory: "production",
+    isPrivate: false,
+  },
+  {
+    id: "vision-gcn",
+    category: "APPLIED RESEARCH & GCN (CV)",
+    badge: "NATURE SCIENTIFIC REPORTS • Q1",
+    title: "Hybrid Vision & Graph Neural Backbone",
+    description:
+      "Combined self-supervised transformer and CNN backbones with Graph Convolutional Networks (GCN) to classify flower growth stages in variable lighting and field conditions. Published in Scientific Reports (Nature, Q1).",
+    tags: ["GCN", "Swin Transformer", "Scientific Reports Q1", "PyTorch"],
+    linkUrl: "https://doi.org/10.1038/s41598-026-56866-y",
+    linkLabel: "View Publication (DOI)",
+    filterCategory: "vision",
     isPrivate: false,
   },
 ];
