@@ -6,7 +6,7 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  const isGithub = project.linkUrl.includes("github.com");
+  const isGithub = project.linkUrl?.includes("github.com") ?? false;
 
   return (
     <div className="editorial-project-card">

@@ -5,8 +5,8 @@ export interface Project {
   title: string;
   description: string;
   tags: string[];
-  linkUrl: string;
-  linkLabel: string;
+  linkUrl?: string;
+  linkLabel?: string;
   filterCategory: "production" | "vision" | "nlp" | "automation";
   isPrivate?: boolean;
 }
@@ -20,8 +20,6 @@ export const projectsData: Project[] = [
     description:
       "Production-grade semantic talent matching platform using FastAPI, Qdrant Vector DB, and BAAI/bge-base-en-v1.5 embeddings. Features automated PDF/DOCX resume parsing, skill-gap analysis, mentor recommendation, clarity scoring via APScheduler, and Dockerized deployment.",
     tags: ["FastAPI", "Qdrant Vector DB", "MongoDB", "LangChain", "Docker"],
-    linkUrl: "https://github.com/Betopia24/r_raoclinical-Ai",
-    linkLabel: "GitHub Repo (Private)",
     filterCategory: "production",
     isPrivate: true,
   },
@@ -33,8 +31,6 @@ export const projectsData: Project[] = [
     description:
       "AI-powered dermatological diagnostics system detecting multi-class skin lesions with fine-tuned EfficientNet backbones (PyTorch), integrated with an interactive LLM clinical guidance advisor served via asynchronous FastAPI and Streamlit, fully containerized with Docker.",
     tags: ["EfficientNet", "PyTorch", "FastAPI", "Docker", "Streamlit"],
-    linkUrl: "https://github.com/Aritra232/Skin-Diseases",
-    linkLabel: "GitHub Repository",
     filterCategory: "vision",
     isPrivate: false,
   },
@@ -46,8 +42,6 @@ export const projectsData: Project[] = [
     description:
       "Automated multimodal moderation service analyzing text, images, and video keyframes for child safety and toxicity compliance using Google's Gemini AI. Features PII blocking, automated quota management, rate-limit retry logic, and local toxicity detection fallback.",
     tags: ["Gemini AI", "FastAPI", "Computer Vision", "Content Moderation", "NLP"],
-    linkUrl: "https://github.com/Aritra232/Social-Safety",
-    linkLabel: "GitHub Repository",
     filterCategory: "vision",
     isPrivate: false,
   },
@@ -59,8 +53,6 @@ export const projectsData: Project[] = [
     description:
       "Personalized conversational food-ordering engine backed by MongoDB as the source of truth for restaurant menus, variations, user preferences, and cart sessions. Uses LLM intent extraction to parse natural-language orders without hallucinating catalog items.",
     tags: ["FastAPI", "MongoDB", "Streamlit", "Claude LLM", "Intent Extraction"],
-    linkUrl: "https://github.com/Aritra232/Food_AI",
-    linkLabel: "GitHub Repository",
     filterCategory: "nlp",
     isPrivate: false,
   },
@@ -72,22 +64,7 @@ export const projectsData: Project[] = [
     description:
       "Automated text-to-video and image-to-video generative pipeline orchestrating Gemini and Veo video foundation models. Manages asynchronous rendering tasks and persists rendered high-resolution media assets directly to AWS S3 storage buckets.",
     tags: ["Gemini / Veo", "Generative Video AI", "AWS S3", "FastAPI", "Automation"],
-    linkUrl: "https://github.com/Aritra232/AI_Diamond",
-    linkLabel: "GitHub Repository",
     filterCategory: "automation",
-    isPrivate: false,
-  },
-  {
-    id: "ai-trading",
-    category: "FINTECH & ALGORITHMIC TRADING",
-    badge: "FASTAPI • TOPSTEPX API • MONGODB",
-    title: "TopstepX Gateway Algorithmic Trading Service",
-    description:
-      "Asynchronous trading gateway service interfacing with TopstepX / ProjectX APIs. Implements dual-gate live execution safeguards, daily profit-lock logic ($1020 cap), multi-user session token authentication, and full MongoDB audit logging.",
-    tags: ["FastAPI", "TopstepX Gateway", "MongoDB", "Algorithmic Trading", "AsyncIO"],
-    linkUrl: "https://github.com/Aritra232/AI_Trading",
-    linkLabel: "GitHub Repository",
-    filterCategory: "production",
     isPrivate: false,
   },
   {
@@ -111,8 +88,6 @@ export const projectsData: Project[] = [
     description:
       "Engineered an automated n8n workflow aggregating European SME market news across feeds, translating and summarizing content between German and English using LLMs, formatting an editorial newsletter, and delivering through Brevo.",
     tags: ["n8n Automation", "LLM Translation", "Brevo API", "Content Pipeline"],
-    linkUrl: "https://github.com/Aritra232",
-    linkLabel: "Automation Architecture",
     filterCategory: "automation",
     isPrivate: false,
   },
@@ -124,8 +99,6 @@ export const projectsData: Project[] = [
     description:
       "A retrieval-augmented chatbot for e-commerce search, using fine-tuned LLaMA-2 with Pinecone for vector indexing. Built to handle bilingual queries (Bangla and English) with context-aware product recommendations.",
     tags: ["LLaMA-2", "Pinecone Vector DB", "RAG", "LangChain", "FastAPI"],
-    linkUrl: "https://github.com/Aritra232",
-    linkLabel: "Project Architecture",
     filterCategory: "production",
     isPrivate: false,
   },

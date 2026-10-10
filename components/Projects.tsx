@@ -14,7 +14,7 @@ export const Projects: React.FC = () => {
           Engineered systems &amp; <span className="serif-highlight">research prototypes.</span>
         </h2>
         <p className="section-subtitle">
-          A battle-tested collection of production AI backends, medical computer vision pipelines, generative video orchestrators, and peer-reviewed research implementations with source links.
+          A battle-tested collection of production AI backends, medical computer vision pipelines, generative video orchestrators, and peer-reviewed research implementations.
         </p>
 
         <div className="projects-editorial-grid">
