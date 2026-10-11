@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
             </div>
 
             <h1 className="hero-editorial-h1">
-              Engineering <span className="hero-gradient-text">intelligent systems</span> &amp; deep learning research.
+              Building <span className="hero-gradient-text">real-world AI applications</span> and publishing machine learning research.
             </h1>
 
             <p className="hero-editorial-bio">

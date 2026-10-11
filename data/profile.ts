@@ -28,7 +28,7 @@ export const profileData: ProfileData = {
   role: "AI Engineer & Researcher",
   affiliation: "SM Technology • East West University",
   location: "Dhaka, Bangladesh",
-  headline: "Building production AI systems & deep learning research.",
+  headline: "Building real-world AI applications and publishing machine learning research.",
   bio: "I'm an AI Engineer at SM Technology and a researcher at East West University, Dhaka. Most of my work involves building production LLM & RAG services, training computer vision models, and exploring graph neural networks.",
   email: "aritrad768@gmail.com",
   github: "https://github.com/Aritra232",
