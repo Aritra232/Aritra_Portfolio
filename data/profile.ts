@@ -25,11 +25,11 @@ export interface ProfileData {
 
 export const profileData: ProfileData = {
   name: "Aritra Das",
-  role: "AI Engineer & CS Researcher",
+  role: "AI Engineer & Researcher",
   affiliation: "SM Technology • East West University",
   location: "Dhaka, Bangladesh",
-  headline: "Building production AI systems & machine learning research.",
-  bio: "I'm an AI Engineer at SM Technology and a graduate researcher at East West University, Dhaka. Most of my work involves building production LLM & RAG services, training self-supervised computer vision models, and exploring graph neural networks for my MSc in CSE.",
+  headline: "Building production AI systems & deep learning research.",
+  bio: "I'm an AI Engineer at SM Technology and a researcher at East West University, Dhaka. Most of my work involves building production LLM & RAG services, training computer vision models, and exploring graph neural networks.",
   email: "aritrad768@gmail.com",
   github: "https://github.com/Aritra232",
   linkedin: "https://linkedin.com/in/aritra-das-9a1051225",

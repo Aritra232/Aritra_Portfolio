@@ -3,15 +3,15 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aritra-portfolio.vercel.app"),
-  title: "Aritra Das — AI Engineer & Computer Science Researcher",
+  title: "Aritra Das — AI Engineer & Researcher",
   description:
-    "Aritra Das — AI Engineer at SM Technology & Computer Science Researcher. Working on production LLM/RAG systems, computer vision, and self-supervised learning.",
+    "Aritra Das — AI Engineer at SM Technology & Researcher. Working on production LLM/RAG systems, computer vision, and deep learning.",
   authors: [{ name: "Aritra Das" }],
   openGraph: {
     type: "website",
-    title: "Aritra Das — AI Engineer & CS Researcher",
+    title: "Aritra Das — AI Engineer & Researcher",
     description:
-      "11 Publications (6 Q1 Journals) • Best Paper Award (AII 2025) • MSc in CSE • AI Engineering & Deep Learning Research.",
+      "11 Publications (6 Q1 Journals) • Best Paper Award (AII 2025) • AI Engineering & Deep Learning Research.",
     images: ["/images/aritra_pic.jpeg"],
   },
   icons: {

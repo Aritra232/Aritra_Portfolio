@@ -10,18 +10,18 @@ export const About: React.FC = () => {
           <div>
             <div className="section-eyebrow">
               <span className="eyebrow-dot"></span>
-              CORE FOCUS &amp; ACADEMIC INQUIRY
+              CORE FOCUS &amp; APPLIED RESEARCH
             </div>
             <h2 className="section-title">
-              Bridging theory &amp; <span className="serif-highlight">real-world systems.</span>
+              Building practical AI &amp; <span className="serif-highlight">deep learning research.</span>
             </h2>
             <p className="section-subtitle" style={{ marginBottom: "1.5rem" }}>
-              I divide my work between engineering resilient machine learning services in industry and conducting empirical computer vision research in academia.
+              I work as an AI engineer developing production systems, and as a researcher investigating modern deep learning architectures.
             </p>
             <p
               className="about-secondary-text"
             >
-              Currently, I design LLM and RAG retrieval pipelines at SM Technology, while researching contrastive self-supervised representations and Graph Convolutional Networks (GCN) for my MSc thesis at East West University.
+              At SM Technology, I build and deploy LLM and RAG retrieval pipelines for real-world products. Alongside industry engineering, I conduct research at East West University, focusing on contrastive self-supervised learning and Graph Convolutional Networks (GCN).
             </p>
             <div style={{ marginTop: "2rem" }}>
               <a href="#contact" className="btn btn-secondary">

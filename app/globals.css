@@ -1384,7 +1384,7 @@ a {
   font-size: 0.88rem;
   color: var(--accent-cyan);
   font-weight: 500;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
 }
 
 .edu-card-desc {

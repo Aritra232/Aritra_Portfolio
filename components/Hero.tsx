@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
             <div className="hero-status-pill">
               <span className="live-dot"></span>
               <span className="hero-status-text">
-                AI Engineer &amp; Computer Science Researcher
+                AI Engineer &amp; Researcher
               </span>
             </div>
 
@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
             </h1>
 
             <p className="hero-editorial-bio">
-              I&apos;m <strong className="text-highlight">{profileData.name}</strong>, an AI Engineer at SM Technology and CS graduate researcher at East West University. I develop production LLM &amp; retrieval pipelines, train self-supervised vision models, and publish empirical ML benchmarks in Elsevier and Nature Q1 journals.
+              I&apos;m <strong className="text-highlight">{profileData.name}</strong>, an AI Engineer at SM Technology and researcher at East West University. I build production LLM &amp; retrieval systems, train computer vision models, and publish empirical research in Elsevier and Nature Q1 journals.
             </p>
 
             {/* Impact Metric Counters */}
@@ -38,11 +38,6 @@ export const Hero: React.FC = () => {
               <div className="editorial-stat-item">
                 <div className="stat-big-num">{profileData.stats.bestPaper}</div>
                 <div className="stat-sub-label">Best Paper Award</div>
-              </div>
-
-              <div className="editorial-stat-item">
-                <div className="stat-big-num">{profileData.stats.degree}</div>
-                <div className="stat-sub-label">CGPA 3.91 / 4.00</div>
               </div>
             </div>
 
@@ -121,12 +116,12 @@ export const Hero: React.FC = () => {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/aritra_pic.jpeg"
-                alt="Aritra Das — AI Engineer &amp; Computer Science Researcher"
+                alt="Aritra Das — AI Engineer &amp; Researcher"
                 className="portrait-clean-img"
               />
               <div className="portrait-caption-strip">
                 <div className="portrait-caption-name">Aritra Das</div>
-                <div className="portrait-caption-role">AI Engineer · CS Researcher · Dhaka, BD</div>
+                <div className="portrait-caption-role">AI Engineer · Researcher · Dhaka, BD</div>
               </div>
             </div>
           </div>

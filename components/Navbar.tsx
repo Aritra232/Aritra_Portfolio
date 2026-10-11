@@ -46,7 +46,7 @@ export const Navbar: React.FC = () => {
           />
           <div className="nav-brand-text">
             <span className="nav-brand-name">Aritra Das</span>
-            <span className="nav-brand-title">AI ENGINEER · CS RESEARCHER</span>
+            <span className="nav-brand-title">AI ENGINEER · RESEARCHER</span>
           </div>
         </a>
 

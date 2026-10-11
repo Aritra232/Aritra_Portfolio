@@ -17,7 +17,7 @@ export const Skills: React.FC = () => {
     { id: "computer-vision", label: "Computer Vision" },
     { id: "nlp-llm", label: "NLP & LLMs" },
     { id: "languages", label: "Languages" },
-    { id: "infrastructure", label: "MLOps & Cloud" },
+    { id: "infrastructure", label: "MLOps & Tooling" },
   ];
 
   const renderIcon = (iconType: string) => {
@@ -93,7 +93,7 @@ export const Skills: React.FC = () => {
           {/* Quick Stats Metric Counter */}
           <div className="skills-metrics-bar">
             <div className="skills-metric-item">
-              <span className="skills-metric-num">38+</span>
+              <span className="skills-metric-num">29</span>
               <span className="skills-metric-label">Technologies</span>
             </div>
             <div className="skills-metric-divider"></div>
