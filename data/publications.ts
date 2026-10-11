@@ -1,8 +1,3 @@
-export interface PublicationMetric {
-  label: string;
-  value: string;
-}
-
 export interface Publication {
   id: string;
   title: string;
@@ -15,8 +10,6 @@ export interface Publication {
   doi?: string;
   citation: string;
   isAward?: boolean;
-  highlight?: string;
-  metrics?: PublicationMetric[];
 }
 
 export const publicationsData: Publication[] = [
@@ -30,12 +23,6 @@ export const publicationsData: Publication[] = [
     badgeType: "q1",
     badgeLabel: "Q1 Journal",
     doi: "https://doi.org/10.1016/j.dib.2026.112745",
-    highlight: "Comprehensive multi-stage floral image benchmark curated across diverse illumination and greenhouse settings for precision floriculture.",
-    metrics: [
-      { label: "Dataset Scale", value: "5,000+ Images" },
-      { label: "Domain", value: "Precision Agriculture" },
-      { label: "Publisher", value: "Elsevier (Q1)" },
-    ],
     citation: "A. Das, M. R. A. Rashid, M. R. Hasan, K. Shams, and R. U. Islam, 'BDFlower: Growth stage flower image dataset for precision agriculture and floriculture,' Data in Brief, vol. 66, p. 112745, 2026. doi: 10.1016/j.dib.2026.112745.",
   },
   {
@@ -48,12 +35,6 @@ export const publicationsData: Publication[] = [
     badgeType: "q1",
     badgeLabel: "Q1 Journal",
     doi: "https://doi.org/10.1038/s41598-026-56866-y",
-    highlight: "Evaluated deep vision backbones combined with Graph Convolutional Networks (GCN) to capture spatial and relational features under variable field conditions.",
-    metrics: [
-      { label: "Architecture", value: "Swin ViT + GCN" },
-      { label: "Benchmarking", value: "CNN vs ViT vs Graph" },
-      { label: "Journal Impact", value: "Nature Scientific Reports (Q1)" },
-    ],
     citation: "A. Das, K. Shams, M. R. A. Rashid, R. U. Islam, S. H. Ripon, and A. W. Reza, 'Benchmarking hybrid CNN and transformer backbones with graph convolution networks (GCN) for flower growth-stage classification,' Scientific Reports, vol. 16, art. 56866, June 2026. doi: 10.1038/s41598-026-56866-y.",
   },
   {
@@ -66,12 +47,6 @@ export const publicationsData: Publication[] = [
     badgeType: "q1",
     badgeLabel: "Q1 Journal",
     doi: "https://doi.org/10.1016/j.nlp.2025.100190",
-    highlight: "Integrated transformer encoders with Kolmogorov-Arnold Networks (KAN) replacing standard MLPs for improved non-linear emotion boundary modeling in low-resource bilingual reviews.",
-    metrics: [
-      { label: "Methodology", value: "BERT + KAN" },
-      { label: "Language", value: "Bilingual Bangla-English" },
-      { label: "Publisher", value: "Elsevier NLP Journal (Q1)" },
-    ],
     citation: "M. R. A. Rashid, A. Das, K. F. Hasan, M. R. Hasan, M. Sultana, M. Hasan, R. U. Islam, R. A. Tuhin, and M. S. H. Khan, 'BERT-KAN: Enhancing bilingual sentiment analysis in Bangladeshi e-commerce through fine-tuned large language models,' Natural Language Processing Journal, vol. 13, p. 100190, 2025. doi: 10.1016/j.nlp.2025.100190.",
   },
   {
@@ -83,12 +58,6 @@ export const publicationsData: Publication[] = [
     category: "award",
     badgeType: "award",
     badgeLabel: "★ Best Paper Award",
-    highlight: "Awarded Best Paper for constructing a fine-grained 7-class emotion corpus of bilingual consumer text and benchmarking transformer representations.",
-    metrics: [
-      { label: "Honor", value: "Best Paper Award" },
-      { label: "Task", value: "7-Class Emotion AI" },
-      { label: "Location", value: "Washington D.C., USA" },
-    ],
     citation: "A. Das et al., 'CodeMixEcom-Emotion: A large-scale Bangla-English review corpus and transformer-based benchmark for fine-grained emotion detection,' in Proc. 5th Int. Conf. on Applied Intelligence and Informatics (AII), Washington, D.C., USA, 2025. (Best Paper Award).",
     isAward: true,
   },
@@ -102,12 +71,6 @@ export const publicationsData: Publication[] = [
     badgeType: "q1",
     badgeLabel: "Q1 Journal",
     doi: "https://doi.org/10.1016/j.dib.2025.111398",
-    highlight: "Real-world traffic flow and pedestrian movement dataset annotated under dense South Asian urban roadway conditions.",
-    metrics: [
-      { label: "Domain", value: "Intelligent Transportation" },
-      { label: "Modality", value: "High-Res Urban Imagery" },
-      { label: "Publisher", value: "Elsevier (Q1)" },
-    ],
     citation: "M. M. Islam, A. Das, K. Shams, M. R. Hasan, K. F. Hasan, M. R. Rashid, A. Chowdhury, M. S. Ali, M. Islam, M. Shahjalal, and S. Masum, 'TFP-BD: An image dataset for traffic flow and pedestrian movement analysis on Bangladeshi urban roads,' Data in Brief, vol. 59, p. 111398, 2025. doi: 10.1016/j.dib.2025.111398.",
   },
   {
@@ -120,12 +83,6 @@ export const publicationsData: Publication[] = [
     badgeType: "q1",
     badgeLabel: "Q1 Journal",
     doi: "https://doi.org/10.1016/j.dib.2024.110052",
-    highlight: "A peer-reviewed benchmark corpus containing thousands of multi-aspect consumer feedback entries annotated for sentiment polarity and emotional charge.",
-    metrics: [
-      { label: "Dataset Scale", value: "15,000+ Reviews" },
-      { label: "Annotations", value: "Sentiment & Emotion" },
-      { label: "Publisher", value: "Elsevier (Q1)" },
-    ],
     citation: "M. R. A. Rashid, K. F. Hasan, M. R. Hasan, A. Das, M. Sultana, and M. Hasan, 'A comprehensive dataset for sentiment and emotion classification from Bangladesh e-commerce reviews,' Data in Brief, vol. 53, p. 110052, 2024. doi: 10.1016/j.dib.2024.110052.",
   },
   {
@@ -138,12 +95,6 @@ export const publicationsData: Publication[] = [
     badgeType: "q1",
     badgeLabel: "Q1 Journal",
     doi: "https://doi.org/10.1016/j.dib.2024.111241",
-    highlight: "Botanical image dataset for agricultural variety identification and disease classification based on subtle foliar morphology.",
-    metrics: [
-      { label: "Task", value: "Botanical Classification" },
-      { label: "Samples", value: "Multi-Cultivar Leaves" },
-      { label: "Publisher", value: "Elsevier (Q1)" },
-    ],
     citation: "M. M. Islam, M. J. Ahmed, M. B. Shafi, A. Das, M. R. Hasan, A. A. Rafi, M. R. Rashid, N. T. Niloy, M. S. Ali, A. Chowdhury, and A. A. Rasel, 'BDMANGO: An image dataset for identifying the variety of mango based on the mango leaves,' Data in Brief, vol. 58, p. 111241, 2025. doi: 10.1016/j.dib.2024.111241.",
   },
   {
@@ -156,12 +107,6 @@ export const publicationsData: Publication[] = [
     badgeType: "q1",
     badgeLabel: "Q1 Journal",
     doi: "https://doi.org/10.1007/s42452-025-06830-6",
-    highlight: "Applied transfer learning and convolutional feature extractors for high-precision botanical leaf cultivar classification.",
-    metrics: [
-      { label: "Architecture", value: "Deep CNNs + Attention" },
-      { label: "Accuracy", value: "97.8% Top-1" },
-      { label: "Journal", value: "Springer Nature (Q1)" },
-    ],
     citation: "M. M. Islam, A. Das, M. R. Hasan, K. Shams, M. J. Ahmed, and R. U. Islam, 'Classification of mango varieties using leaf imagery: A deep learning-based approach,' Discover Applied Sciences, vol. 7, p. 284, 2025. doi: 10.1007/s42452-025-06830-6.",
   },
   {

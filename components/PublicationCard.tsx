@@ -76,23 +76,6 @@ export const PublicationCard: React.FC<PublicationCardProps> = ({
       {/* Authors list */}
       <p className="pub-item-authors">{highlightMyName(publication.authors)}</p>
 
-      {/* Highlight Narrative */}
-      {publication.highlight && (
-        <p className="pub-item-highlight">{publication.highlight}</p>
-      )}
-
-      {/* Key Metrics Micro-Grid (Inspired by Fahim's empirical results boxes) */}
-      {publication.metrics && publication.metrics.length > 0 && (
-        <div className="pub-metrics-grid">
-          {publication.metrics.map((metric, mIdx) => (
-            <div key={mIdx} className="pub-metric-box">
-              <span className="pub-metric-label">{metric.label}</span>
-              <span className="pub-metric-val">{metric.value}</span>
-            </div>
-          ))}
-        </div>
-      )}
-
       {/* Action Row */}
       <div className="pub-item-actions">
         {publication.doi && (
