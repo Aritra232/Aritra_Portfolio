@@ -1,14 +1,16 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const Navbar: React.FC = () => {
+  const pathname = usePathname();
   const [theme, setTheme] = useState<"light" | "dark">("dark");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    // Default to dark theme for maximum AI computing aesthetic, or load saved
     const savedTheme = localStorage.getItem("portfolio-theme") as "light" | "dark" | null;
     const initialTheme = savedTheme || "dark";
     setTheme(initialTheme);
@@ -33,11 +35,22 @@ export const Navbar: React.FC = () => {
     setMobileOpen(false);
   };
 
+  const navItems = [
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Education", href: "/education" },
+    { label: "Skills", href: "/skills" },
+    { label: "Publications", href: "/publications" },
+    { label: "Projects", href: "/projects" },
+    { label: "Experience", href: "/experience" },
+    { label: "Contact", href: "/contact" },
+  ];
+
   return (
     <header className={`navbar ${scrolled ? "scrolled" : ""}`} id="navbar">
       <div className="container nav-container">
         {/* Brand */}
-        <a href="#hero" className="nav-brand" aria-label="Aritra Das">
+        <Link href="/" className="nav-brand" aria-label="Aritra Das">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/aritra_pic.jpeg"
@@ -48,19 +61,22 @@ export const Navbar: React.FC = () => {
             <span className="nav-brand-name">Aritra Das</span>
             <span className="nav-brand-title">AI ENGINEER · RESEARCHER</span>
           </div>
-        </a>
+        </Link>
 
         {/* Primary Links */}
         <nav>
           <ul className={`nav-links ${mobileOpen ? "open" : ""}`} id="nav-links">
-            <li><a href="#about" className="nav-link" onClick={closeMobile}>About</a></li>
-            <li><a href="#education" className="nav-link" onClick={closeMobile}>Education</a></li>
-            <li><a href="#skills" className="nav-link" onClick={closeMobile}>Skills</a></li>
-            <li><a href="#publications" className="nav-link" onClick={closeMobile}>Publications</a></li>
-            <li><a href="#projects" className="nav-link" onClick={closeMobile}>Projects</a></li>
-            <li><a href="#experience" className="nav-link" onClick={closeMobile}>Experience</a></li>
-            <li><a href="#awards" className="nav-link" onClick={closeMobile}>Recognition</a></li>
-            <li><a href="#contact" className="nav-link" onClick={closeMobile}>Contact</a></li>
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className={`nav-link ${pathname === item.href ? "active" : ""}`}
+                  onClick={closeMobile}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
 

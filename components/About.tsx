@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { profileData } from "@/data/profile";
 
 export const About: React.FC = () => {
@@ -21,13 +22,13 @@ export const About: React.FC = () => {
             <p
               className="about-secondary-text"
             >
-              At SM Technology, I build and deploy LLM and RAG retrieval pipelines for real-world products. Alongside industry engineering, I conduct research at East West University, focusing on contrastive self-supervised learning and Graph Convolutional Networks (GCN).
+              At SM Technology, I build and deploy LLM and RAG retrieval pipelines for real-world products. Alongside industry engineering, I conduct research at East West University, focusing on contrastive self-supervised learning and Graph Convolution networks (GCN).
             </p>
             <div style={{ marginTop: "2rem" }}>
-              <a href="#contact" className="btn btn-secondary">
+              <Link href="/contact" className="btn btn-secondary">
                 <span>Start a Conversation</span>
                 <i className="fa-solid fa-arrow-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
 

@@ -1,8 +1,15 @@
 import React from "react";
+import Link from "next/link";
 import { projectsData } from "@/data/projects";
 import { ProjectCard } from "./ProjectCard";
 
-export const Projects: React.FC = () => {
+interface ProjectsProps {
+  limit?: number;
+}
+
+export const Projects: React.FC<ProjectsProps> = ({ limit }) => {
+  const displayedProjects = limit ? projectsData.slice(0, limit) : projectsData;
+
   return (
     <section className="section" id="projects">
       <div className="container">
@@ -18,10 +25,19 @@ export const Projects: React.FC = () => {
         </p>
 
         <div className="projects-editorial-grid">
-          {projectsData.map((project) => (
+          {displayedProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
+
+        {limit && (
+          <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
+            <Link href="/projects" className="btn btn-secondary">
+              <span>Explore All {projectsData.length} Projects</span>
+              <i className="fa-solid fa-arrow-right"></i>
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

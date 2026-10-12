@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { ToastProvider } from "@/components/ToastProvider";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aritra-portfolio.vercel.app"),
+  metadataBase: new URL("https://aritraportfolio-nu.vercel.app"),
   title: "Aritra Das — AI Engineer & Researcher",
   description:
     "Aritra Das — AI Engineer at SM Technology & Researcher. Working on production LLM/RAG systems, computer vision, and deep learning.",
@@ -25,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="light">
+    <html lang="en" data-theme="dark">
       <head>
         {/* Google Fonts: Fraunces, Plus Jakarta Sans, JetBrains Mono */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,7 +43,13 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <ToastProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </ToastProvider>
+      </body>
     </html>
   );
 }

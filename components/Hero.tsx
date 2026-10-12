@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { profileData } from "@/data/profile";
 
 export const Hero: React.FC = () => {
@@ -43,15 +44,15 @@ export const Hero: React.FC = () => {
 
             {/* Actions Row */}
             <div className="hero-actions-group">
-              <a href="#publications" className="btn btn-primary" id="hero-read-pubs">
+              <Link href="/publications" className="btn btn-primary" id="hero-read-pubs">
                 <span>View Publications</span>
                 <i className="fa-solid fa-arrow-right"></i>
-              </a>
+              </Link>
 
-              <a href="#skills" className="btn btn-secondary">
+              <Link href="/skills" className="btn btn-secondary">
                 <i className="fa-solid fa-microchip"></i>
                 <span>Technical Arsenal</span>
-              </a>
+              </Link>
 
               <a
                 href="/docs/Aritra_Das_CV.pdf"

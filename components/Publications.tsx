@@ -1,17 +1,27 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { publicationsData } from "@/data/publications";
 import { PublicationCard } from "./PublicationCard";
+import { useToast } from "./ToastProvider";
 
 interface PublicationsProps {
-  onNotify: (msg: string) => void;
+  onNotify?: (msg: string) => void;
+  limit?: number;
+  showFilters?: boolean;
 }
 
-export const Publications: React.FC<PublicationsProps> = ({ onNotify }) => {
+export const Publications: React.FC<PublicationsProps> = ({
+  onNotify,
+  limit,
+  showFilters = true,
+}) => {
+  const { showToast } = useToast();
+  const notify = onNotify || showToast;
   const [filter, setFilter] = useState<"all" | "q1" | "conference" | "award">("all");
 
-  const filteredPublications = publicationsData.filter((pub) => {
+  const matchingPublications = publicationsData.filter((pub) => {
     if (filter === "all") return true;
     if (filter === "q1") return pub.category === "q1";
     if (filter === "conference") return pub.category === "conference" || pub.isAward;
@@ -19,10 +29,14 @@ export const Publications: React.FC<PublicationsProps> = ({ onNotify }) => {
     return true;
   });
 
+  const filteredPublications = limit
+    ? matchingPublications.slice(0, limit)
+    : matchingPublications;
+
   const handleCopyCitation = (citation: string) => {
     navigator.clipboard.writeText(citation).then(
-      () => onNotify("Citation copied to clipboard!"),
-      () => onNotify("Failed to copy citation.")
+      () => notify("Citation copied to clipboard!"),
+      () => notify("Failed to copy citation.")
     );
   };
 
@@ -41,32 +55,34 @@ export const Publications: React.FC<PublicationsProps> = ({ onNotify }) => {
         </p>
 
         {/* Filter Tabs */}
-        <div className="pub-filter-strip">
-          <button
-            className={`pub-pill-tab ${filter === "all" ? "active" : ""}`}
-            onClick={() => setFilter("all")}
-          >
-            All Papers ({publicationsData.length})
-          </button>
-          <button
-            className={`pub-pill-tab ${filter === "q1" ? "active" : ""}`}
-            onClick={() => setFilter("q1")}
-          >
-            Elsevier &amp; Nature Q1 (6)
-          </button>
-          <button
-            className={`pub-pill-tab ${filter === "conference" ? "active" : ""}`}
-            onClick={() => setFilter("conference")}
-          >
-            IEEE Conferences (5)
-          </button>
-          <button
-            className={`pub-pill-tab ${filter === "award" ? "active" : ""}`}
-            onClick={() => setFilter("award")}
-          >
-            ★ Best Paper Award (1)
-          </button>
-        </div>
+        {showFilters && (
+          <div className="pub-filter-strip">
+            <button
+              className={`pub-pill-tab ${filter === "all" ? "active" : ""}`}
+              onClick={() => setFilter("all")}
+            >
+              All Papers ({publicationsData.length})
+            </button>
+            <button
+              className={`pub-pill-tab ${filter === "q1" ? "active" : ""}`}
+              onClick={() => setFilter("q1")}
+            >
+              Elsevier &amp; Nature Q1 (6)
+            </button>
+            <button
+              className={`pub-pill-tab ${filter === "conference" ? "active" : ""}`}
+              onClick={() => setFilter("conference")}
+            >
+              IEEE Conferences (5)
+            </button>
+            <button
+              className={`pub-pill-tab ${filter === "award" ? "active" : ""}`}
+              onClick={() => setFilter("award")}
+            >
+              ★ Best Paper Award (1)
+            </button>
+          </div>
+        )}
 
         {/* Publications List */}
         <div className="editorial-pub-list">
@@ -79,6 +95,15 @@ export const Publications: React.FC<PublicationsProps> = ({ onNotify }) => {
             />
           ))}
         </div>
+
+        {limit && (
+          <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
+            <Link href="/publications" className="btn btn-secondary">
+              <span>View All 11 Publications</span>
+              <i className="fa-solid fa-arrow-right"></i>
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

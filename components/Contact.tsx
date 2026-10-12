@@ -3,19 +3,23 @@
 import React, { useState } from "react";
 import { profileData } from "@/data/profile";
 
+import { useToast } from "./ToastProvider";
+
 interface ContactProps {
-  onNotify: (msg: string) => void;
+  onNotify?: (msg: string) => void;
 }
 
 export const Contact: React.FC<ContactProps> = ({ onNotify }) => {
+  const { showToast } = useToast();
+  const notify = onNotify || showToast;
   const [fromText, setFromText] = useState("");
   const [message, setMessage] = useState("");
   const [sentStatus, setSentStatus] = useState<string | null>(null);
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(profileData.email).then(
-      () => onNotify("Email copied to clipboard!"),
-      () => onNotify("Failed to copy email.")
+      () => notify("Email copied to clipboard!"),
+      () => notify("Failed to copy email.")
     );
   };
 
@@ -30,7 +34,7 @@ export const Contact: React.FC<ContactProps> = ({ onNotify }) => {
 
     window.location.href = `mailto:${profileData.email}?subject=${subject}&body=${body}`;
     setSentStatus("Mail composer opened! If it didn't open automatically, write to aritrad768@gmail.com.");
-    onNotify("Opening mail client...");
+    notify("Opening mail client...");
   };
 
   return (
